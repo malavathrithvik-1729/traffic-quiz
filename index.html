@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Traffic Knowledge Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+  <!-- Firebase Init -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAJT61cprsH6Zxsv4xvubfMnKlk3XSq3gE",
+      authDomain: "traffic-quiz-6eaa3.firebaseapp.com",
+      projectId: "traffic-quiz-6eaa3",
+      storageBucket: "traffic-quiz-6eaa3.firebasestorage.app",
+      messagingSenderId: "1011063341314",
+      appId: "1:1011063341314:web:2f4602a1dd1887d3b0821b"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+</head>
+
+<body>
+
+  <!-- ==================================================
+       SPLASH / INTRO SCREEN (AUTO – 3 SECONDS)
+       ================================================== -->
+  <div id="introScreen"></div>
+
+  <!-- ==================================================
+       OPENING PAGE
+       ================================================== -->
+  <div id="startScreen" class="screen hidden">
+
+    <h1>Traffic Knowledge for Students</h1>
+
+    <p>Test your traffic education knowledge</p>
+
+    <p>Start a small quiz of 5 questions</p>
+
+    <button class="primary-btn" onclick="startQuiz()">
+      Start Quiz
+    </button>
+
+  </div>
+
+  <!-- ==================================================
+       QUIZ PAGE
+       ================================================== -->
+  <div id="quizScreen" class="screen hidden">
+
+    <!-- Logo (top-right) -->
+    <img src="logo.png" class="corner-logo" alt="Logo">
+
+    <!-- Top bar -->
+    <div class="top-bar">
+      Question <span id="attempted">1</span> / 5
+    </div>
+
+    <!-- Question -->
+    <h2 id="question"></h2>
+
+    <!-- Optional image -->
+    <img
+      id="qImage"
+      class="q-image hidden"
+      alt="Question Image"
+    >
+
+    <!-- Options -->
+    <div id="options">
+
+      <button
+        class="option-btn"
+        data-option="1"
+        onclick="selectOption(1,this)"
+      >
+        <b>A.</b> <span id="o1"></span>
+      </button>
+
+      <button
+        class="option-btn"
+        data-option="2"
+        onclick="selectOption(2,this)"
+      >
+        <b>B.</b> <span id="o2"></span>
+      </button>
+
+      <button
+        class="option-btn"
+        data-option="3"
+        onclick="selectOption(3,this)"
+      >
+        <b>C.</b> <span id="o3"></span>
+      </button>
+
+      <button
+        class="option-btn"
+        data-option="0"
+        onclick="selectOption(0,this)"
+      >
+        <b>D.</b> None of the above
+      </button>
+
+    </div>
+
+    <!-- Next -->
+    <button class="primary-btn" onclick="nextQuestion()">
+      Next
+    </button>
+
+  </div>
+<!-- ==================================================
+     RESULT PAGE
+     ================================================== -->
+<div id="resultScreen" class="screen hidden">
+
+  <!-- TOP BAR (Name + Submit + Restart + Logo) -->
+  <div class="result-top-bar">
+
+    <div class="result-controls">
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter your name"
+      >
+
+      <button class="primary-btn small" onclick="saveResult()">
+        Submit
+      </button>
+
+      <button
+        class="secondary-btn small"
+        onclick="location.reload()"
+      >
+        Restart
+      </button>
+    </div>
+
+    <!-- Logo (top-right) -->
+    <img src="logo.png" class="corner-logo" alt="Logo">
+
+  </div>
+
+  <!-- RESULT CONTENT -->
+  <h2>Thank you for attempting the quiz 🙏</h2>
+
+  <h3 id="finalScore"></h3>
+
+  <!-- REVIEW SECTION -->
+  <div id="reviewSection"></div>
+
+  <!-- Bottom tagline -->
+  <div class="result-tagline">
+    Traffic Education Program – Quiz
+  </div>
+
+</div>
+
+
+  <!-- ==================================================
+       MAIN SCRIPT
+       ================================================== -->
+  <script src="script.js"></script>
+
+  <!-- ==================================================
+       SPLASH AUTO TRANSITION
+       ================================================== -->
+  <script>
+    // Splash → Opening (with fade handled by CSS)
+    setTimeout(() => {
+      const splash = document.getElementById("introScreen");
+      splash.classList.add("fade-out");
+    }, 2000);
+
+    setTimeout(() => {
+      document.getElementById("introScreen").style.display = "none";
+      document.getElementById("startScreen").classList.remove("hidden");
+    }, 3200);
+  </script>
+
+</body>
+</html>

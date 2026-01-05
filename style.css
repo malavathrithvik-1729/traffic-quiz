@@ -1,0 +1,303 @@
+/* ==================================================
+   GLOBAL RESET
+   ================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+  min-height: 100vh;
+}
+
+/* ==================================================
+   SPLASH / INTRO SCREEN
+   ================================================== */
+#introScreen {
+  width: 100%;
+  height: 100vh;
+  background: url("intro-bg.png") center / cover no-repeat;
+  opacity: 1;
+  transform: scale(1.05);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+/* Fade-out effect */
+#introScreen.fade-out {
+  opacity: 0;
+  transform: scale(1);
+}
+
+/* ==================================================
+   COMMON SCREEN STYLES
+   ================================================== */
+.screen {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ==================================================
+   BUTTONS
+   ================================================== */
+.primary-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #1f3c88;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: #162c66;
+}
+
+.secondary-btn {
+  padding: 10px 25px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  background: #eeeeee;
+  cursor: pointer;
+}
+
+/* ==================================================
+   OPENING PAGE
+   ================================================== */
+#startScreen h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#startScreen p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #444;
+  text-align: center;
+}
+
+/* ==================================================
+   QUIZ PAGE
+   ================================================== */
+
+/* Logo top-right */
+.corner-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 55px;
+  z-index: 10;
+}
+
+/* Top bar */
+.top-bar {
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+/* Question */
+#question {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Question image */
+.q-image {
+  max-width: 260px;
+  margin: 15px auto;
+  display: block;
+}
+
+/* Options container */
+#options {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+/* Option buttons */
+.option-btn {
+  width: 100%;
+  text-align: left;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid #cccccc;
+  background: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.option-btn:hover {
+  background: #f3f3f3;
+}
+
+.option-btn:disabled {
+  cursor: default;
+}
+
+/* Correct answer */
+.option-btn.correct {
+  background: #2ecc71;
+  color: #ffffff;
+  border-color: #27ae60;
+}
+
+/* Wrong answer */
+.option-btn.wrong {
+  background: #e74c3c;
+  color: #ffffff;
+  border-color: #c0392b;
+}
+
+/* ==================================================
+   RESULT PAGE
+   ================================================== */
+#finalScore {
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+
+/* Name input */
+input[type="text"] {
+  padding: 10px;
+  width: 260px;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* Review section */
+#reviewSection {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+#reviewSection p {
+  margin: 6px 0;
+}
+
+/* Review highlights */
+#reviewSection .correct {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+#reviewSection .wrong {
+  color: #e74c3c;
+  text-decoration: line-through;
+}
+
+/* Bottom tagline */
+.result-tagline {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+/* ==================================================
+   RESPONSIVE (MOBILE)
+   ================================================== */
+@media (max-width: 600px) {
+  #startScreen h1 {
+    font-size: 2.2rem;
+  }
+
+  #question {
+    font-size: 1.3rem;
+  }
+
+  .corner-logo {
+    height: 45px;
+  }
+
+  .option-btn {
+    font-size: 0.95rem;
+  }
+}
+/* Restart button (Result page – top right) */
+.restart-btn {
+  position: absolute;
+  top: 20px;
+  right: 90px; /* keeps space from logo */
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  background: #eeeeee;
+  cursor: pointer;
+}
+
+.restart-btn:hover {
+  background: #dddddd;
+}
+/* RESULT TOP BAR */
+.result-top-bar {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left controls */
+.result-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Small buttons */
+.small {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+}
+/* Result page top bar */
+.result-top-bar {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left controls */
+.result-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Smaller buttons */
+.small {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+}
+

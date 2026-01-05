@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel – Traffic Quiz Results</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="admin-container">
+
+  <!-- HEADER -->
+  <div class="admin-header">
+    <img src="logo.jpg" class="logo">
+    <h1>Traffic Quiz – Admin Panel</h1>
+    <p>Traffic Knowledge for Students</p>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Date & Time</th>
+        </tr>
+      </thead>
+      <tbody id="resultsTable">
+        <!-- Data will come here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="admin-footer">
+    © Telangana Traffic Police – Educational Purpose Only
+  </div>
+
+</div>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+<script>
+  // 🔥 SAME FIREBASE CONFIG AS MAIN APP
+  const firebaseConfig = {
+ 
+    apiKey: "AIzaSyAJT61cprsH6Zxsv4xvubfMnKlk3XSq3gE",
+    authDomain: "traffic-quiz-6eaa3.firebaseapp.com",
+    projectId: "traffic-quiz-6eaa3",
+    storageBucket: "traffic-quiz-6eaa3.firebasestorage.app",
+    messagingSenderId: "1011063341314",
+    appId: "1:1011063341314:web:2f4602a1dd1887d3b0821b"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+  let count = 1;
+  const table = document.getElementById("resultsTable");
+
+  db.collection("results")
+    .orderBy("time", "desc")
+    .get()
+    .then(snapshot => {
+      snapshot.forEach(doc => {
+        const d = doc.data();
+        const row = `
+          <tr>
+            <td>${count++}</td>
+            <td>${d.name}</td>
+            <td class="score">${d.score} / ${d.total}</td>
+            <td>${new Date(d.time).toLocaleString()}</td>
+          </tr>
+        `;
+        table.innerHTML += row;
+      });
+    })
+    .catch(err => {
+      alert("Error loading results");
+      console.error(err);
+    });
+</script>
+
+</body>
+</html>
