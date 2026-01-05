@@ -179,6 +179,27 @@ body {
   color: #ffffff;
   border-color: #c0392b;
 }
+/* ==================================================
+   PROGRESS BAR
+   ================================================== */
+
+.progress-container {
+  width: 100%;
+  max-width: 600px;
+  height: 10px;
+  background: #dbe7ff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 20%; /* starts at Question 1 */
+  background: #1f3c88;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
 
 /* ==================================================
    RESULT PAGE
