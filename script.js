@@ -37,10 +37,14 @@ function startQuiz() {
 
   currentIndex = 0;
   score = 0;
+  answered = false;
   userAnswers = [];
 
   document.getElementById("startScreen").classList.add("hidden");
   document.getElementById("quizScreen").classList.remove("hidden");
+
+  // Reset progress bar
+  document.getElementById("progressBar").style.width = "20%";
 
   loadQuestion();
 }
@@ -53,14 +57,22 @@ function loadQuestion() {
 
   const q = quizQuestions[currentIndex];
 
+  // Update question count
   document.getElementById("attempted").innerText = currentIndex + 1;
+
+  // ✅ Update progress bar (FIXED)
+  const progressPercent = ((currentIndex + 1) / 5) * 100;
+  document.getElementById("progressBar").style.width = progressPercent + "%";
+
+  // Set question text
   document.getElementById("question").innerText = q.QUESTION;
 
+  // Set options
   document.getElementById("o1").innerText = q.OPTION1;
   document.getElementById("o2").innerText = q.OPTION2;
   document.getElementById("o3").innerText = q.OPTION3;
 
-  // Reset buttons
+  // Reset option buttons
   document.querySelectorAll(".option-btn").forEach(btn => {
     btn.disabled = false;
     btn.classList.remove("correct", "wrong");
@@ -77,16 +89,17 @@ function loadQuestion() {
 }
 
 /************************************************
- * SELECT OPTION (NO FEEDBACK HERE)
+ * SELECT OPTION
  ************************************************/
 function selectOption(selectedValue, btn) {
   if (answered) return;
+
   answered = true;
 
-  // Save user's answer
+  // Save user answer
   userAnswers[currentIndex] = selectedValue;
 
-  // Disable all buttons (no highlighting)
+  // Disable all buttons
   document.querySelectorAll(".option-btn").forEach(button => {
     button.disabled = true;
   });
@@ -112,10 +125,11 @@ function nextQuestion() {
 }
 
 /************************************************
- * CALCULATE SCORE (AFTER QUIZ)
+ * CALCULATE SCORE
  ************************************************/
 function calculateScore() {
   score = 0;
+
   quizQuestions.forEach((q, index) => {
     if (userAnswers[index] === q.ANSWER) {
       score++;
