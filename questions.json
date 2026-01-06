@@ -5,8 +5,7 @@
     "OPTION1": "Sound horn and proceed",
     "OPTION2": "Slow down, sound horn and pass",
     "OPTION3": "Stop the vehicle and wait till the pedestrians cross the road and then proceed",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 2,
@@ -23,8 +22,7 @@
     "OPTION1": "Increase the speed and try to cross the bridge as fast as possible",
     "OPTION2": "Put on the head light and pass the bridge",
     "OPTION3": "Wait till the other vehicle crosses the bridge and then proceed",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 4,
@@ -41,8 +39,7 @@
     "OPTION1": "Take the vehicle to the nearest police station and report the accident",
     "OPTION2": "Stop the vehicle and report to the police station",
     "OPTION3": "Take all reasonable steps to secure medical attention to the injured and report to the nearest police station within 24 hours",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 6,
@@ -59,8 +56,7 @@
     "OPTION1": "Parking is prohibited",
     "OPTION2": "Overtaking is prohibited",
     "OPTION3": "Should not drive in reverse gear",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
 
   {
@@ -78,8 +74,7 @@
     "OPTION1": "Through the right side of that vehicle",
     "OPTION2": "Through the left side",
     "OPTION3": "Through the left side, if the road is wide",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 10,
@@ -96,8 +91,7 @@
     "OPTION1": "Stop the vehicle on the left side of the road, get down from the vehicle, go to the railway track, and ensure that no train or trolley is coming from either side",
     "OPTION2": "Sound horn and cross the track as fast as possible",
     "OPTION3": "Wait till the train passes",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 12,
@@ -114,8 +108,7 @@
     "OPTION1": "By looking at the tyre size.",
     "OPTION2": "By colour of the vehicle.",
     "OPTION3": "By looking at the number plate of the vehicle.",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 14,
@@ -132,8 +125,7 @@
     "OPTION1": "Till the driving licence is obtained",
     "OPTION2": "6 months",
     "OPTION3": "30 days",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 16,
@@ -150,8 +142,7 @@
     "OPTION1": "Should walk on the left side of the road",
     "OPTION2": "Should walk on the right side of the road",
     "OPTION3": "May walk on either side of the road",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 18,
@@ -169,8 +160,7 @@
     "OPTION1": "Police vehicles",
     "OPTION2": "Ambulance and fire service vehicles",
     "OPTION3": "Express, Super Express buses",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 20,
@@ -187,8 +177,7 @@
     "OPTION1": "Your right side",
     "OPTION2": "Your left side",
     "OPTION3": "The convenient side",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 22,
@@ -205,8 +194,7 @@
     "OPTION1": "while driving down hill",
     "OPTION2": "If the road is sufficiently wide",
     "OPTION3": "When the driver of the vehicle in front shows the signal to overtake",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 24,
@@ -223,8 +211,7 @@
     "OPTION1": "The right side of the road",
     "OPTION2": "The left side of the road",
     "OPTION3": "The center of the road",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 26,
@@ -241,8 +228,7 @@
     "OPTION1": "The vehicle should be locked",
     "OPTION2": "The person having licence to drive such a vehicle should be in the drivers seat",
     "OPTION3": "The park light shall remain lit",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 28,
@@ -259,8 +245,7 @@
     "OPTION1": "During night",
     "OPTION2": "When there is mist",
     "OPTION3": "When the opposite vehicle is not using dim light",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 30,
@@ -277,8 +262,7 @@
     "OPTION1": "stopping vehicle",
     "OPTION2": "pedestrians crossing",
     "OPTION3": "for giving preference to vehicle",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 32,
@@ -296,8 +280,7 @@
     "OPTION1": "allow passage if there are no vehicles from front side.",
     "OPTION2": "no preference need be given.",
     "OPTION3": "the driver shall allow free passage by drawing to the side of the road",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 34,
@@ -314,8 +297,7 @@
     "OPTION1": "vehicle can proceed with caution.",
     "OPTION2": "stop the vehicle.",
     "OPTION3": "slow down.",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 36,
@@ -332,8 +314,7 @@
     "OPTION1": "Proper",
     "OPTION2": "Improper",
     "OPTION3": "Proper if NO PARKING sign is not provided",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 38,
@@ -350,8 +331,7 @@
     "OPTION1": "reduce the speed by changing the gear",
     "OPTION2": "apply brake",
     "OPTION3": "proceed in the same speed",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 40,
@@ -368,8 +348,7 @@
     "OPTION1": "when it is likely to cause inconvenience or danger to other traffic",
     "OPTION2": "when the vehicle in front is reducing speed",
     "OPTION3": "during night",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 42,
@@ -386,8 +365,7 @@
     "OPTION1": "is permissible",
     "OPTION2": "not permissible",
     "OPTION3": "is permissible with care",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 44,
@@ -404,8 +382,7 @@
     "OPTION1": "allowed in private vehicles",
     "OPTION2": "allowed during night time",
     "OPTION3": "prohibited in all vehicles",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   
   {
@@ -423,8 +400,7 @@
     "OPTION1": "Mosque, Church and Temple",
     "OPTION2": "Near Hospital, Courts of Law",
     "OPTION3": "Near Police Station",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 48,
@@ -441,8 +417,7 @@
     "OPTION1": "for seeing face",
     "OPTION2": "for watching the traffic approaching from behind",
     "OPTION3": "for seeing the back seat passenger",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 50,
@@ -459,8 +434,7 @@
     "OPTION1": "Permitted in bus",
     "OPTION2": "permitted in autorikshaw",
     "OPTION3": "prohibited in all vehicles",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 52,
@@ -477,8 +451,7 @@
     "OPTION1": "In turnings",
     "OPTION2": "On foot paths",
     "OPTION3": "Where parking is not prohibited",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 54,
@@ -495,8 +468,7 @@
     "OPTION1": "shall not check air pressure",
     "OPTION2": "shall not smoke",
     "OPTION3": "shall not use any light of the vehicle",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 56,
@@ -513,8 +485,7 @@
     "OPTION1": "In Government offices",
     "OPTION2": "In Police Stations",
     "OPTION3": "While driving a vehicle",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 58,
@@ -531,8 +502,7 @@
     "OPTION1": "When the road ahead is not clearly visible",
     "OPTION2": "when the road ahead is wide enough",
     "OPTION3": "when the road center is marked with white broken lines",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 60,
@@ -550,8 +520,7 @@
     "OPTION1": "Inconvenience to other vehicles.",
     "OPTION2": "Inconvenience to other road users.",
     "OPTION3": "Drivers of other vehicles coming at a distance may not see persons crossing the road.",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 62,
@@ -568,8 +537,7 @@
     "OPTION1": "Registration Certificate, G.C.R., Insurance Certificate",
     "OPTION2": "Registration certificate, Insurance Certificate, Tax Token, Driving Licence",
     "OPTION3": "Registration Certificate, Permit, Trip Sheet",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 64,
@@ -586,8 +554,7 @@
     "OPTION1": "Show the left turn signal, drive to the center and turn to the left",
     "OPTION2": "Sound horn and turn to the left",
     "OPTION3": "Show the left turn signal, keep to the left side of the road and turn to the left",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 66,
@@ -604,8 +571,7 @@
     "OPTION1": "6 months",
     "OPTION2": "One Year",
     "OPTION3": "Two years",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 68,
@@ -622,8 +588,7 @@
     "OPTION1": "Proceed keeping to the left",
     "OPTION2": "Put the head light in dim and bright alternatively several times",
     "OPTION3": "Dim the head light till the vehicle passes",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 70,
@@ -640,8 +605,7 @@
     "OPTION1": "He is turning to the left",
     "OPTION2": "He is slowing down the vehicle",
     "OPTION3": "Allowing to overtake",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   
   {
@@ -659,8 +623,7 @@
     "OPTION1": "18 years",
     "OPTION2": "21 years",
     "OPTION3": "16 years",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 74,
@@ -677,8 +640,7 @@
     "OPTION1": "Stop the vehicle, sound horn and proceed",
     "OPTION2": "Slow down and proceed with caution",
     "OPTION3": "Sound horn continuously and proceed",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 76,
@@ -695,8 +657,7 @@
     "OPTION1": "Extend his left hand towards left",
     "OPTION2": "Not show hand signal",
     "OPTION3": "Show left turn signal with his right hand",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 78,
@@ -713,8 +674,7 @@
     "OPTION1": "Left turn signal",
     "OPTION2": "Right turn signal",
     "OPTION3": "Slow down signal",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 80,
@@ -731,8 +691,7 @@
     "OPTION1": "In a road where there is no traffic restrictions",
     "OPTION2": "In a busy road",
     "OPTION3": "When there are vehicles passing through the left",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 82,
@@ -749,8 +708,7 @@
     "OPTION1": "Till the registration of the vehicle is cancelled",
     "OPTION2": "15 years",
     "OPTION3": "5 years",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 84,
@@ -767,8 +725,7 @@
     "OPTION1": "No vehicle is approaching from behind",
     "OPTION2": "The road ahead is clearly visible and it is safe to overtake",
     "OPTION3": "The vehicle in front is turning left",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   
   {
@@ -786,8 +743,7 @@
     "OPTION1": "5 Persons",
     "OPTION2": "Sufficient persons for loading and unloading the goods",
     "OPTION3": "As many persons as recorded in the Registration Certificate",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 88,
@@ -804,8 +760,7 @@
     "OPTION1": "Stop your vehicle and let the vehicle to overtake",
     "OPTION2": "Increase the speed of your vehicle",
     "OPTION3": "Not obstruct the other vehicle from over taking",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 90,
@@ -822,8 +777,7 @@
     "OPTION1": "In front of a parked vehicle",
     "OPTION2": "On one-way road",
     "OPTION3": "On foot-path",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 92,
@@ -840,8 +794,7 @@
     "OPTION1": "To reduce the speed",
     "OPTION2": "To apply sudden brake",
     "OPTION3": "To park a vehicle",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 94,
@@ -858,8 +811,7 @@
     "OPTION1": "Allowed in unavoidable circumstances",
     "OPTION2": "Violation of law",
     "OPTION3": "Allowed when the traffic is less",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 96,
@@ -876,8 +828,7 @@
     "OPTION1": "Blow the horn continuously",
     "OPTION2": "Not blow horn",
     "OPTION3": "Blow the horn only intermittently",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 98,
@@ -894,8 +845,7 @@
     "OPTION1": "Illegal",
     "OPTION2": "Legal",
     "OPTION3": "Legal if there is urgency",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 100,
@@ -913,8 +863,7 @@
     "OPTION1": "25 years",
     "OPTION2": "18 years",
     "OPTION3": "20 years",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 102,
@@ -931,8 +880,7 @@
     "OPTION1": "State highway",
     "OPTION2": "Panchayath roads",
     "OPTION3": "Narrow bridge",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 104,
@@ -949,8 +897,7 @@
     "OPTION1": "The driver shall stop the vehicle.",
     "OPTION2": "The driver shall proceed, blowing the horns.",
     "OPTION3": "The driver shall reduce the speed.",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 106,
@@ -967,8 +914,7 @@
     "OPTION1": "road side.",
     "OPTION2": "where parking is permitted.",
     "OPTION3": "near traffic light.",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 108,
@@ -985,8 +931,7 @@
     "OPTION1": "is an offence leading to suspension or cancellation of driving licence",
     "OPTION2": "is an offence leading to punishment by fine only",
     "OPTION3": "is not an offence",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 110,
@@ -1003,8 +948,7 @@
     "OPTION1": "Blow horn and proceed",
     "OPTION2": "proceed slowly and cautiously since there is chance of students suddenly crossing the road",
     "OPTION3": "No special care is required",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 112,
@@ -1021,8 +965,7 @@
     "OPTION1": "The driver of a vehicle shall consider the white cane as a traffic sign to stop the vehicle",
     "OPTION2": "Blow the horn and proceed",
     "OPTION3": "Slow down and proceed with caution",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   
   {
@@ -1040,8 +983,7 @@
     "OPTION1": "shall report to the nearest police station within 24 hours",
     "OPTION2": "shall report to the nearest police station within 12 hours",
     "OPTION3": "shall report to the nearest police station within 48 hours",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 116,
@@ -1058,8 +1000,7 @@
     "OPTION1": "driver shall report to the nearest police station within 24 hours",
     "OPTION2": "driver shall report to the nearest police station within 7 days",
     "OPTION3": "need not report to any police station",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 118,
@@ -1076,8 +1017,7 @@
     "OPTION1": "We shall not overtake another vehicle.",
     "OPTION2": "we can over take another vehicle.",
     "OPTION3": "we can overtake another vehicle blowing horn",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 120,
@@ -1094,8 +1034,7 @@
     "OPTION1": "We can overtake",
     "OPTION2": "we shall not overtake",
     "OPTION3": "we can overtake blowing horn",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 122,
@@ -1112,8 +1051,7 @@
     "OPTION1": "We shall not increase speed",
     "OPTION2": "We can increase speed with due care",
     "OPTION3": "",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 124,
@@ -1130,8 +1068,7 @@
     "OPTION1": "Entrance of hospital",
     "OPTION2": "Left side of the road",
     "OPTION3": "Market area",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 126,
@@ -1148,8 +1085,7 @@
     "OPTION1": "blocking a fire hydrant",
     "OPTION2": "near a public well",
     "OPTION3": "left side of the road",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 128,
@@ -1167,8 +1103,7 @@
     "OPTION1": "the vehicle shall be provided with foot rest, hand grip and sari guard",
     "OPTION2": "the vehicle shall be provided with side car",
     "OPTION3": "vehicle shall be provided with rear view mirror",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 130,
@@ -1185,8 +1120,7 @@
     "OPTION1": "can attract suspension of driving licence",
     "OPTION2": "can attract fine only",
     "OPTION3": "None of the above",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 132,
@@ -1203,8 +1137,7 @@
     "OPTION1": "the driving licence is liable to be suspended or cancelled",
     "OPTION2": "only fine is attracted",
     "OPTION3": "None of the above",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 134,
@@ -1221,8 +1154,7 @@
     "OPTION1": "the driving licence is liable to be suspended or cancelled",
     "OPTION2": "only fine is attracted",
     "OPTION3": "Legitimate right of driver",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 136,
@@ -1239,8 +1171,7 @@
     "OPTION1": "legally not punishable",
     "OPTION2": "Only fine is attracted",
     "OPTION3": "can attract suspension or cancellation of driving licence",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 138,
@@ -1257,8 +1188,7 @@
     "OPTION1": "can attract suspension / cancellation of driving licence",
     "OPTION2": "only fine is attracted",
     "OPTION3": "None of the above",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 140,
@@ -1276,8 +1206,7 @@
     "OPTION1": "Give way to traffic approaching the intersection from other roads",
     "OPTION2": "Give proper signal, sound the horn and proceed",
     "OPTION3": "Give way to the traffic approaching the intersection on your right side and proceed after giving necessary signals",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 142,
@@ -1294,8 +1223,7 @@
     "OPTION1": "As there is no restriction, proceed at the same speed",
     "OPTION2": "Stop the vehicle and wait for the green light to appear",
     "OPTION3": "Slow down the vehicle and proceed only after ensuring that it is safe to do so",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 144,
@@ -1312,8 +1240,7 @@
     "OPTION1": "Not touch or cross the yellow line",
     "OPTION2": "Allow to overtake only through the right side of yellow line",
     "OPTION3": "Cross the line only when overtaking a vehicle in front",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 146,
@@ -1330,8 +1257,7 @@
     "OPTION1": "Give precedence to the vehicles coming down the hill",
     "OPTION2": "Give precedence to the vehicles going up the hill",
     "OPTION3": "Give precedence to the vehicles carrying heavy load",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 148,
@@ -1348,8 +1274,7 @@
     "OPTION1": "Any person other than the driver",
     "OPTION2": "More than three persons other than the driver",
     "OPTION3": "More than two persons including the driver",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 150,
@@ -1366,8 +1291,7 @@
     "OPTION1": "To the vehicles coming from the left",
     "OPTION2": "To the vehicles coming from the right",
     "OPTION3": "To all vehicles proceeding along the main road",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 152,
@@ -1385,8 +1309,7 @@
     "OPTION1": "The driver of that vehicle indicates his intention to turn right and proceeds to the center of the road",
     "OPTION2": "There is sufficient space on the left side",
     "OPTION3": "That vehicle moves slowly",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 154,
@@ -1403,8 +1326,7 @@
     "OPTION1": "Driving too close behind a vehicle in a dangerous manner",
     "OPTION2": "Keeping safe distance from the vehicle ahead regulating the speed proportionately",
     "OPTION3": "Keeping a distance of at least 7 metres from the vehicle ahead",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 156,
@@ -1421,8 +1343,7 @@
     "OPTION1": "The vehicle is not covered by a valid registration or permit",
     "OPTION2": "The vehicle is not covered by a valid insurance",
     "OPTION3": "The vehicle exceeds the speed limit",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 158,
@@ -1439,8 +1360,7 @@
     "OPTION1": "Air-horn",
     "OPTION2": "Multi-toned horn",
     "OPTION3": "Electric horn",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 160,
@@ -1448,8 +1368,7 @@
     "OPTION1": "One-way road",
     "OPTION2": "Steep descending road",
     "OPTION3": "Steep ascending road",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 161,
@@ -1457,8 +1376,7 @@
     "OPTION1": "Imprisonment which may extend to 6 months or Rs.2000/- as fine or both",
     "OPTION2": "Imprisonment which may extend to 1 year or fine up to Rs.4000/- or both",
     "OPTION3": "2 years rigorous imprisonment",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 162,
@@ -1466,8 +1384,7 @@
     "OPTION1": "You will drive when the traffic is less",
     "OPTION2": "You will drive the vehicle only when an instructor holding driving licence to drive motor cycle accompanies",
     "OPTION3": "You will not carry any other person on the motor cycle except for the purpose of getting instructions from an instructor who holds a valid driving licence to drive motor cycle",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 163,
@@ -1475,8 +1392,7 @@
     "OPTION1": "Ensure safety and drive away",
     "OPTION2": "Slow down to stop",
     "OPTION3": "Sound horn and proceed",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 164,
@@ -1484,8 +1400,7 @@
     "OPTION1": "Life Insurance",
     "OPTION2": "Third party Insurance",
     "OPTION3": "Comprehensive Insurance",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   
   {
@@ -1494,8 +1409,7 @@
     "OPTION1": "10 meter",
     "OPTION2": "5 meter",
     "OPTION3": "safe distance according to speed",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 166,
@@ -1503,8 +1417,7 @@
     "OPTION1": "Registration Certificate",
     "OPTION2": "Tax Token",
     "OPTION3": "Permit",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 167,
@@ -1512,8 +1425,7 @@
     "OPTION1": "the road is marked with broken center line in white colour.",
     "OPTION2": "the road is marked with continuous center line in yellow colour.",
     "OPTION3": "vehicle is driven on a steep hill.",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 168,
@@ -1521,8 +1433,7 @@
     "OPTION1": "shall not change track.",
     "OPTION2": "can change track if required.",
     "OPTION3": "shall stop the vehicle.",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 169,
@@ -1530,8 +1441,7 @@
     "OPTION1": "stop the vehicle till green light glows.",
     "OPTION2": "stop the vehicle and proceed if safe.",
     "OPTION3": "reduce speed and proceed.",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 170,
@@ -1539,8 +1449,7 @@
     "OPTION1": "60 km/hour",
     "OPTION2": "70 km/hour",
     "OPTION3": "80 km/hour",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 171,
@@ -1548,8 +1457,7 @@
     "OPTION1": "Driving cautiously anticipating violations of traffic rules and road signs both by drivers and other road users.",
     "OPTION2": "Driving with sole aim of reaching the destination with no regards to road signs.",
     "OPTION3": "Driving on the assumption that other road users will be cautious about their safety.",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 172,
@@ -1557,8 +1465,7 @@
     "OPTION1": "A line with 5 centimeters width in white or yellow colour at the approach of road junction or pedestrian crossing",
     "OPTION2": "A line drawn through the center of the road in yellow colour",
     "OPTION3": "A broken white line through the center of the road",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 173,
@@ -1566,8 +1473,7 @@
     "OPTION1": "Check radiator water level and engine oil level",
     "OPTION2": "Check head light",
     "OPTION3": "Check brake",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 174,
@@ -1575,8 +1481,7 @@
     "OPTION1": "No Limit",
     "OPTION2": "50 Km/hr",
     "OPTION3": "60 Km/hr",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 175,
@@ -1584,8 +1489,7 @@
     "OPTION1": "Motor Cycle",
     "OPTION2": "Motor Car",
     "OPTION3": "Stage Carriage",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 176,
@@ -1593,8 +1497,7 @@
     "OPTION1": "40 km/hour",
     "OPTION2": "25 km/hour",
     "OPTION3": "30 km/hour",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 177,
@@ -1602,8 +1505,7 @@
     "OPTION1": "50 km/hour",
     "OPTION2": "60 km/hour",
     "OPTION3": "70 km/hour",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 178,
@@ -1611,8 +1513,7 @@
     "OPTION1": "25 km/hour",
     "OPTION2": "30 km/hour",
     "OPTION3": "40 km/hour",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 179,
@@ -1620,8 +1521,7 @@
     "OPTION1": "in tractor",
     "OPTION2": "in stationwagon",
     "OPTION3": "in goods carriages",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   
   {
@@ -1630,8 +1530,7 @@
     "OPTION1": "The load can be projected to both sides within 30 cm.",
     "OPTION2": "The load shall not project on both sides.",
     "OPTION3": "The load can be projected to both sides within 50 cm.",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 181,
@@ -1639,8 +1538,7 @@
     "OPTION1": "150 cm",
     "OPTION2": "100 cm",
     "OPTION3": "120 cm",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 182,
@@ -1648,8 +1546,7 @@
     "OPTION1": "35 Km/hr",
     "OPTION2": "45 Km/hr",
     "OPTION3": "60 Km/hr",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 183,
@@ -1657,8 +1554,7 @@
     "OPTION1": "15 meters",
     "OPTION2": "5 meters",
     "OPTION3": "10 meters",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 184,
@@ -1666,8 +1562,7 @@
     "OPTION1": "40 km/hour",
     "OPTION2": "30 km/hour",
     "OPTION3": "50 km/hour",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 185,
@@ -1675,8 +1570,7 @@
     "OPTION1": "Pass the vehicle from the left hand side.",
     "OPTION2": "Pass the vehicle from the right hand side.",
     "OPTION3": "Pass the vehicle from any convenient side.",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 186,
@@ -1684,8 +1578,7 @@
     "OPTION1": "20 km/hour",
     "OPTION2": "24 km/hour",
     "OPTION3": "32 km/hour",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 187,
@@ -1693,8 +1586,7 @@
     "OPTION1": "heavy passenger vehicle",
     "OPTION2": "motor car",
     "OPTION3": "Autorickshaw",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 188,
@@ -1702,8 +1594,7 @@
     "OPTION1": "During night.",
     "OPTION2": "During day time.",
     "OPTION3": "Under no circumstances.",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 189,
@@ -1711,8 +1602,7 @@
     "OPTION1": "25 Km/hr",
     "OPTION2": "30 Km/hr",
     "OPTION3": "40 Km/hr",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 190,
@@ -1720,8 +1610,7 @@
     "OPTION1": "No limit",
     "OPTION2": "allowed as per permit",
     "OPTION3": "10 ton",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 191,
@@ -1729,8 +1618,7 @@
     "OPTION1": "Rs- 1000/-",
     "OPTION2": "Rs- 2000/-",
     "OPTION3": "Rs- 3000/-",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 192,
@@ -1738,8 +1626,7 @@
     "OPTION1": "35 km/hour",
     "OPTION2": "25 km/hour",
     "OPTION3": "20 km/hour",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 193,
@@ -1747,8 +1634,7 @@
     "OPTION1": "45 km/hour",
     "OPTION2": "35 km/hour",
     "OPTION3": "25 km/hour",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 194,
@@ -1756,8 +1642,7 @@
     "OPTION1": "40 km/hour",
     "OPTION2": "30 km/hour",
     "OPTION3": "20 km/hour",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 195,
@@ -1765,8 +1650,7 @@
     "OPTION1": "30 km/hour",
     "OPTION2": "35 km/hour",
     "OPTION3": "40 km/hour",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 196,
@@ -1774,8 +1658,7 @@
     "OPTION1": "50 Km/hr",
     "OPTION2": "30 Km/hr",
     "OPTION3": "40 Km/hr",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 197,
@@ -1783,8 +1666,7 @@
     "OPTION1": "60 Km/hr",
     "OPTION2": "70 Km/hr",
     "OPTION3": "No limit",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 198,
@@ -1792,8 +1674,7 @@
     "OPTION1": "80 Km/hr",
     "OPTION2": "65 Km/hr",
     "OPTION3": "70 Km/hr",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   
   {
@@ -1802,8 +1683,7 @@
     "OPTION1": "Speed limit shall not be exceeded",
     "OPTION2": "Shall not drive after consuming alcohol",
     "OPTION3": "Shall not use vehicle on road without paying tax",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 200,
@@ -1811,8 +1691,7 @@
     "OPTION1": "After consuming alcohol",
     "OPTION2": "Exceeding the speed limit",
     "OPTION3": "Exceeding the weight permitted to carry",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 201,
@@ -1820,8 +1699,7 @@
     "OPTION1": "15 Km/hr",
     "OPTION2": "25 Km/hr",
     "OPTION3": "35 Km/hr",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 202,
@@ -1829,8 +1707,7 @@
     "OPTION1": "3.8 meters",
     "OPTION2": "3 meters",
     "OPTION3": "no limit",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 203,
@@ -1838,8 +1715,7 @@
     "OPTION1": "35 km/hour",
     "OPTION2": "25 km/hour",
     "OPTION3": "15 km/hour",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 204,
@@ -1847,8 +1723,7 @@
     "OPTION1": "35 km/hour",
     "OPTION2": "25 km/hour",
     "OPTION3": "15 km/hour",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 205,
@@ -1856,8 +1731,7 @@
     "OPTION1": "wear jerkins",
     "OPTION2": "wear helmet",
     "OPTION3": "wear shoes",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 206,
@@ -1865,8 +1739,7 @@
     "OPTION1": "15 km/hour",
     "OPTION2": "25 km/hour",
     "OPTION3": "35 km/hour",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 207,
@@ -1874,8 +1747,7 @@
     "OPTION1": "30 km/hour",
     "OPTION2": "40 km/hour",
     "OPTION3": "20 km/hour",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 208,
@@ -1883,8 +1755,7 @@
     "OPTION1": "35 km/hour",
     "OPTION2": "25 km/hour",
     "OPTION3": "15 km/hour",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 209,
@@ -1892,8 +1763,7 @@
     "OPTION1": "40 Km/hr",
     "OPTION2": "30 Km/hr",
     "OPTION3": "20 Km/hr",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 210,
@@ -1901,8 +1771,7 @@
     "OPTION1": "70 Km/hr",
     "OPTION2": "65 Km/hr",
     "OPTION3": "50 Km/hr",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 211,
@@ -1910,8 +1779,7 @@
     "OPTION1": "45 km/hour",
     "OPTION2": "35 km/hour",
     "OPTION3": "25 km/hour",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 212,
@@ -1919,8 +1787,7 @@
     "OPTION1": "Drive to another intersection that has no traffic light",
     "OPTION2": "Wait until the light turns green before making the  U  turn",
     "OPTION3": "Make the  U  turn if there is a policeman at the intersection",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 213,
@@ -1928,8 +1795,7 @@
     "OPTION1": "Dangerous to two-wheelers only",
     "OPTION2": "Dangerous to all at all",
     "OPTION3": "Dangerous to four-wheelers vehicles",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 214,
@@ -1937,8 +1803,7 @@
     "OPTION1": "change to low gear",
     "OPTION2": "Stop the Engine",
     "OPTION3": "select neutral",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 215,
@@ -1946,8 +1811,7 @@
     "OPTION1": "Be an approved driving instructor",
     "OPTION2": "Hold a Driving licence",
     "OPTION3": "Hold a learner s licence",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 216,
@@ -1955,8 +1819,7 @@
     "OPTION1": "traffic entering has right of way",
     "OPTION2": "traffic existing has right of way",
     "OPTION3": "traffic on the roundabout has right of way",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 217,
@@ -1964,8 +1827,7 @@
     "OPTION1": "It is for your individual safety",
     "OPTION2": "Otherwise you will be caught by the traffic police",
     "OPTION3": "It is necessary to inform the road authority",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 218,
@@ -1973,8 +1835,7 @@
     "OPTION1": "to give your right of way",
     "OPTION2": "to warn other drivers of your presence",
     "OPTION3": "to attract a friend s attention",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   
   {
@@ -1983,8 +1844,7 @@
     "OPTION1": "wait behind patiently",
     "OPTION2": "overtake from the left",
     "OPTION3": "overtake from the pedestrians",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 220,
@@ -1992,8 +1852,7 @@
     "OPTION1": "you do not dazzle other road users",
     "OPTION2": "you flash headlamps before overtaking",
     "OPTION3": "your rear fog lights are switched on",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 221,
@@ -2001,8 +1860,7 @@
     "OPTION1": "overtaking",
     "OPTION2": "two wheelers",
     "OPTION3": "traffic at 40 km/h",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 222,
@@ -2010,8 +1868,7 @@
     "OPTION1": "traffic lights aren t working",
     "OPTION2": "you should slow down and proceed with caution",
     "OPTION3": "men are at work",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 223,
@@ -2019,8 +1876,7 @@
     "OPTION1": "sound your horn",
     "OPTION2": "be patient and wait",
     "OPTION3": "drive on",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 224,
@@ -2028,8 +1884,7 @@
     "OPTION1": "on a footpath",
     "OPTION2": "at top of a hill",
     "OPTION3": "neither of these two alternatives",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 225,
@@ -2037,8 +1892,7 @@
     "OPTION1": "is good because you can see more",
     "OPTION2": "is bad because it reflects back and can dazzle",
     "OPTION3": "make sure others can see you",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 226,
@@ -2046,8 +1900,7 @@
     "OPTION1": "you want to overtake",
     "OPTION2": "it is foggy",
     "OPTION3": "following a vehicle",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 227,
@@ -2055,8 +1908,7 @@
     "OPTION1": "change lanes to the right lane",
     "OPTION2": "change lanes at least 50 mts ahead to the middle lane",
     "OPTION3": "change lanes to the middle lane at the crossing",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 228,
@@ -2064,8 +1916,7 @@
     "OPTION1": "accelerate to maintain gap behind you",
     "OPTION2": "touch the brakes to show your brake lights",
     "OPTION3": "allow the vehicle to overtake, if safe",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 229,
@@ -2073,8 +1924,7 @@
     "OPTION1": "in poor visibility and highways",
     "OPTION2": "on country roads",
     "OPTION3": "along narrow streets",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 230,
@@ -2082,8 +1932,7 @@
     "OPTION1": "in case it changes direction suddenly",
     "OPTION2": "in case its fog lights dazzle you",
     "OPTION3": "in case it stop suddenly",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 231,
@@ -2091,8 +1940,7 @@
     "OPTION1": "badly worn tyre",
     "OPTION2": "over inflated tyre",
     "OPTION3": "under inflated tyre",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 232,
@@ -2100,8 +1948,7 @@
     "OPTION1": "Speed more than permitted",
     "OPTION2": "passing very close to you by driving in the zig zag manner",
     "OPTION3": "all of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 233,
@@ -2109,8 +1956,7 @@
     "OPTION1": "accelerate hard and move forward",
     "OPTION2": "move forward slowly",
     "OPTION3": "wait until the vehicle turn to right side",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 234,
@@ -2118,8 +1964,7 @@
     "OPTION1": "look both ways and move carefully",
     "OPTION2": "look at right and move slowly",
     "OPTION3": "move quickly",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 235,
@@ -2127,8 +1972,7 @@
     "OPTION1": "When you are moving straight",
     "OPTION2": "When your vehicle is parked and the same is causing inconvenience to other road users",
     "OPTION3": "when your vehicle parked at a no parking area",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 236,
@@ -2136,8 +1980,7 @@
     "OPTION1": "use your head light on high beam",
     "OPTION2": "always use your head lights in low beam",
     "OPTION3": "always use hazard light",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 237,
@@ -2145,8 +1988,7 @@
     "OPTION1": "Puncture",
     "OPTION2": "skid",
     "OPTION3": "wear",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 238,
@@ -2154,8 +1996,7 @@
     "OPTION1": "hazard warning light",
     "OPTION2": "low beam head light",
     "OPTION3": "high beam head light",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   
   {
@@ -2164,8 +2005,7 @@
     "OPTION1": "overtake through left side",
     "OPTION2": "sound horn continually",
     "OPTION3": "overtake through right side only",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 240,
@@ -2173,8 +2013,7 @@
     "OPTION1": "gives you better fuel efficiency",
     "OPTION2": "take less time for your journey",
     "OPTION3": "reduces time to react to hazard",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 241,
@@ -2182,8 +2021,7 @@
     "OPTION1": "observing traffic rules",
     "OPTION2": "reacting to wrong behaviour of other drivers",
     "OPTION3": "observing the dash board guages",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 242,
@@ -2191,8 +2029,7 @@
     "OPTION1": "no parking",
     "OPTION2": "do not over take",
     "OPTION3": "stop",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 243,
@@ -2209,8 +2046,7 @@
     "OPTION1": "slow down and do not over take",
     "OPTION2": "beware of pedestrians",
     "OPTION3": "switch on the head lights",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 245,
@@ -2218,8 +2054,7 @@
     "OPTION1": "improve your view of the road",
     "OPTION2": "avoid skid",
     "OPTION3": "to pass the vehicle from behind",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 246,
@@ -2236,8 +2071,7 @@
     "OPTION1": "only if there is traffic on the main road",
     "OPTION2": "behind the line and move forward slowly as vision improves",
     "OPTION3": "only if you are turning to the right",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 248,
@@ -2245,8 +2079,7 @@
     "OPTION1": "reverse out of the road",
     "OPTION2": "Turn back carefully and drive away",
     "OPTION3": "continue to the end of the road",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 249,
@@ -2254,8 +2087,7 @@
     "OPTION1": "Move to the opposite side of the road",
     "OPTION2": "speed up and drive through quickly",
     "OPTION3": "sound your horn and be prepared to stop",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 250,
@@ -2263,8 +2095,7 @@
     "OPTION1": "sound horn and warn the driver",
     "OPTION2": "wait behind the vehicle",
     "OPTION3": "over take on the right hand side",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 251,
@@ -2272,8 +2103,7 @@
     "OPTION1": "keep to the left lane unless over taking",
     "OPTION2": "keep the lane with the least traffic",
     "OPTION3": "always keep to the right lane at high speed",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 252,
@@ -2281,8 +2111,7 @@
     "OPTION1": "move on as you have priority",
     "OPTION2": "accelerate to move quickly",
     "OPTION3": "give way to on coming traffic",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 253,
@@ -2290,8 +2119,7 @@
     "OPTION1": "no parking",
     "OPTION2": "means no overtaking",
     "OPTION3": "edge of carriage way",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 254,
@@ -2299,8 +2127,7 @@
     "OPTION1": "Red/Blue circles",
     "OPTION2": "Red Triangles",
     "OPTION3": "Base triangles",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 255,
@@ -2327,8 +2154,7 @@
     "OPTION1": "Select the neutral gear and the indicator",
     "OPTION2": "show the signal for a right turn, watch in the rear view mirror",
     "OPTION3": "wait for signal to turn red",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 258,
@@ -2345,8 +2171,7 @@
     "OPTION1": "use the rear view mirrors, check in the blind spot and give signal",
     "OPTION2": "look around the vehicle",
     "OPTION3": "sound horn and move ahead",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 260,
@@ -2354,8 +2179,7 @@
     "OPTION1": "when ordered by police or if traffic signal is red",
     "OPTION2": "in an emergency or brake down",
     "OPTION3": "all of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 261,
@@ -2363,8 +2187,7 @@
     "OPTION1": "the middle lane",
     "OPTION2": "the left hand lane",
     "OPTION3": "on the shoulder of the road",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 262,
@@ -2372,8 +2195,7 @@
     "OPTION1": "continue in that lane",
     "OPTION2": "stop until other lane is cleared",
     "OPTION3": "show signal and cut across",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 263,
@@ -2381,8 +2203,7 @@
     "OPTION1": "indicate right signal and then left signal",
     "OPTION2": "No signals is required",
     "OPTION3": "use hazard warning lamp",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 264,
@@ -2390,8 +2211,7 @@
     "OPTION1": "on a busy road",
     "OPTION2": "on a one way road",
     "OPTION3": "all of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 265,
@@ -2399,8 +2219,7 @@
     "OPTION1": "only if both roads are clear and empty",
     "OPTION2": "at any time",
     "OPTION3": "legally not permitted",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 266,
@@ -2408,8 +2227,7 @@
     "OPTION1": "pass all the vehicle and stop in front of them",
     "OPTION2": "stop behind the last vehicle in the appropriate lane",
     "OPTION3": "stop any where",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 267,
@@ -2417,8 +2235,7 @@
     "OPTION1": "give a wider field of vision",
     "OPTION2": "cover the blind spot totally",
     "OPTION3": "judge the speed of following vehicle",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 268,
@@ -2426,8 +2243,7 @@
     "OPTION1": "disturbing mental equilibrium",
     "OPTION2": "Disturbing the concentration of the driver",
     "OPTION3": "all of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 269,
@@ -2435,8 +2251,7 @@
     "OPTION1": "Human beings only",
     "OPTION2": "plants and animals only",
     "OPTION3": "all of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 270,
@@ -2444,8 +2259,7 @@
     "OPTION1": "permitted only in emergency",
     "OPTION2": "an offence under the law as it causes noise pollution",
     "OPTION3": "for avoiding accident",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 271,
@@ -2453,8 +2267,7 @@
     "OPTION1": "change the tyres around",
     "OPTION2": "pump the pedal when braking",
     "OPTION3": "consult your mechanic",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 272,
@@ -2462,8 +2275,7 @@
     "OPTION1": "bad condition of tyres and road",
     "OPTION2": "error of driver",
     "OPTION3": "both of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 273,
@@ -2471,8 +2283,7 @@
     "OPTION1": "pull down your sun visor",
     "OPTION2": "slow down and stop",
     "OPTION3": "switch on your main beam",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 274,
@@ -2480,8 +2291,7 @@
     "OPTION1": "An area not seen in your rear view mirrors",
     "OPTION2": "an area not covered by head lights",
     "OPTION3": "an area not covered by the rear view mirror inside your vehicle",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 275,
@@ -2489,8 +2299,7 @@
     "OPTION1": "during day time and working is going on",
     "OPTION2": "During night time only",
     "OPTION3": "at all times",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 276,
@@ -2498,8 +2307,7 @@
     "OPTION1": "Driving at excessive speed",
     "OPTION2": "Drunken driving",
     "OPTION3": "Both of the above",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 277,
@@ -2507,8 +2315,7 @@
     "OPTION1": "allowed in emergency situation",
     "OPTION2": "punishable offence under section 184 of M.V. act",
     "OPTION3": "both of the above are correct",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   
   {
@@ -2517,8 +2324,7 @@
     "OPTION1": "protect the area and inform the authorities",
     "OPTION2": "protect the area and give first aid to injured",
     "OPTION3": "protect the area, give first aid, take the injured to hospital and inform the authorities",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 280,
@@ -2526,8 +2332,7 @@
     "OPTION1": "To treat the injury",
     "OPTION2": "To prevent aggravating the injury and its effects",
     "OPTION3": "all of the above",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 281,
@@ -2535,8 +2340,7 @@
     "OPTION1": "It increase your awareness",
     "OPTION2": "it reduce your concentration and attention",
     "OPTION3": "it increase your confidence",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 282,
@@ -2544,8 +2348,7 @@
     "OPTION1": "Red",
     "OPTION2": "Green",
     "OPTION3": "red or green",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 283,
@@ -2553,8 +2356,7 @@
     "OPTION1": "Stop as soon as it is safe to do so and take rest",
     "OPTION2": "switch on the stereo to help you concentrate",
     "OPTION3": "speed up to get your destination sooner",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 284,
@@ -2562,8 +2364,7 @@
     "OPTION1": "takes proper rest periods at correct intervals",
     "OPTION2": "walk around in fresh air after a rest stop",
     "OPTION3": "both of the above",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 285,
@@ -2571,8 +2372,7 @@
     "OPTION1": "increase your speed to finish your work earlier",
     "OPTION2": "continue your journey and keep your windows open",
     "OPTION3": "stop in a safe place and if possible seek for medical attention",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 286,
@@ -2580,8 +2380,7 @@
     "OPTION1": "prevent the driving wheel from spinning",
     "OPTION2": "prevent moisture from building up inside the braking system",
     "OPTION3": "prevent wheels from locking up on braking and avoid skidding of the tyres",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 287,
@@ -2589,8 +2388,7 @@
     "OPTION1": "A reduction of air pressure",
     "OPTION2": "smooth progressive braking",
     "OPTION3": "reduction of braking effectiveness",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 288,
@@ -2598,8 +2396,7 @@
     "OPTION1": "select neutral for a short distance",
     "OPTION2": "repeatedly pump the brake pedal",
     "OPTION3": "select a suitable higher power gear and apply brakes if only necessary",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 289,
@@ -2607,8 +2404,7 @@
     "OPTION1": "Hold the vehicle on the clutch",
     "OPTION2": "Hold the vehicle on the foot brake",
     "OPTION3": "Hold the vehicle applying parking brake after stopping",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 290,
@@ -2616,8 +2412,7 @@
     "OPTION1": "Overtake as soon as you can",
     "OPTION2": "Move over to the left",
     "OPTION3": "Stay further back",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 291,
@@ -2625,8 +2420,7 @@
     "OPTION1": "Stop the vehicle until the flood stops",
     "OPTION2": "Watch flood level gauge drive in high torque gear with high acceleration",
     "OPTION3": "Drive in high torque gear with low acceleration",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 292,
@@ -2634,8 +2428,7 @@
     "OPTION1": "Cooling system",
     "OPTION2": "Speed governor",
     "OPTION3": "Brake system",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 293,
@@ -2643,8 +2436,7 @@
     "OPTION1": "Reduce tyre wear",
     "OPTION2": "assist with braking",
     "OPTION3": "reduce driving effort",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 294,
@@ -2652,8 +2444,7 @@
     "OPTION1": "gently apply the parking brake",
     "OPTION2": "plan and take earlier action in using brake",
     "OPTION3": "slow down by using gears only",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 295,
@@ -2661,8 +2452,7 @@
     "OPTION1": "braking",
     "OPTION2": "cornering",
     "OPTION3": "both of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 296,
@@ -2670,8 +2460,7 @@
     "OPTION1": "select the appropriate gear",
     "OPTION2": "adjust your speed",
     "OPTION3": "both of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 297,
@@ -2679,8 +2468,7 @@
     "OPTION1": "for going ahead at a junction",
     "OPTION2": "For slowing down the rear vehicle",
     "OPTION3": "for emergency parking especially on high ways and busy roads",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 298,
@@ -2688,8 +2476,7 @@
     "OPTION1": "will not shatter",
     "OPTION2": "has a plastic layer pasted between dual glasses",
     "OPTION3": "both of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   
   {
@@ -2698,8 +2485,7 @@
     "OPTION1": "stop at the scene of the accident, give First Aid to the victim if possible and help him to get medical attention",
     "OPTION2": "drive the vehicle to the nearest police station",
     "OPTION3": "inform the insurance authorities at the earliest",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 300,
@@ -2707,8 +2493,7 @@
     "OPTION1": "drive away from the accident spot and clear the damage at the earliest",
     "OPTION2": "inform the insurance authorities as soon as possible",
     "OPTION3": "inform the police station having jurisdiction over the place in which the accident occurred within 24 hours",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 301,
@@ -2716,8 +2501,7 @@
     "OPTION1": "loosen the grip on the steering wheel",
     "OPTION2": "brake firmly for a stop",
     "OPTION3": "hold the steering wheel firmly and stop safely by using brake",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 302,
@@ -2725,8 +2509,7 @@
     "OPTION1": "bright clothing",
     "OPTION2": "dark clothing",
     "OPTION3": "none of this",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 303,
@@ -2734,8 +2517,7 @@
     "OPTION1": "ensure that no vehicle is passing by",
     "OPTION2": "quickly open the door and get down",
     "OPTION3": "do not open the right doors and get down through the left only",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 304,
@@ -2743,8 +2525,7 @@
     "OPTION1": "Loading it towards the rear",
     "OPTION2": "loading it towards the front",
     "OPTION3": "spreading the load evenly",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 305,
@@ -2752,8 +2533,7 @@
     "OPTION1": "to stop handling being affective",
     "OPTION2": "to set your rear ward vision",
     "OPTION3": "to prevent sand being blown into the eyes of other road users",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 306,
@@ -2761,8 +2541,7 @@
     "OPTION1": "none",
     "OPTION2": "as per permit",
     "OPTION3": "none",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 307,
@@ -2770,8 +2549,7 @@
     "OPTION1": "the right side mirror",
     "OPTION2": "the left side mirror",
     "OPTION3": "look behind over your right shoulders",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 308,
@@ -2779,8 +2557,7 @@
     "OPTION1": "using your mirrors look behind and give proper signal",
     "OPTION2": "signal left with indicator and move",
     "OPTION3": "use only the off side mirror and move away quickly",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 309,
@@ -2788,8 +2565,7 @@
     "OPTION1": "Cyclist and motor cyclist",
     "OPTION2": "pedestrian",
     "OPTION3": "both",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 310,
@@ -2797,8 +2573,7 @@
     "OPTION1": "number of turns of the steering wheels between locked",
     "OPTION2": "amount by which a vehicle cuts corners",
     "OPTION3": "amount of space needed for the vehicle to turn",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 311,
@@ -2806,8 +2581,7 @@
     "OPTION1": "the gear lever is in neutral",
     "OPTION2": "there is no mist or water in your rear view mirror",
     "OPTION3": "your vehicle is traveling slowly in a straight line",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 312,
@@ -2815,8 +2589,7 @@
     "OPTION1": "stop the vehicle on the left side of the road as you can",
     "OPTION2": "move the passengers to the front of your vehicle",
     "OPTION3": "both",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 313,
@@ -2824,8 +2597,7 @@
     "OPTION1": "only for rainy season",
     "OPTION2": "for cleaning the wind shield at any season",
     "OPTION3": "as a signal to the on coming vehicle to stop approaching",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 314,
@@ -2833,8 +2605,7 @@
     "OPTION1": "more than 50 kmph",
     "OPTION2": "maximum speed of the vehicle",
     "OPTION3": "not more than 50 km/hr",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   
   {
@@ -2843,8 +2614,7 @@
     "OPTION1": "Apply the foot brake firmly in a pumping action until the vehicle has stopped",
     "OPTION2": "apply the foot brake firmly once until the vehicle has been stopped",
     "OPTION3": "apply the foot brake and hand brake until the vehicle has stopped",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 316,
@@ -2852,8 +2622,7 @@
     "OPTION1": "overtaking another vehicle",
     "OPTION2": "cornering",
     "OPTION3": "braking",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 317,
@@ -2861,8 +2630,7 @@
     "OPTION1": "First aid box",
     "OPTION2": "spare wheel",
     "OPTION3": "audio system",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 318,
@@ -2870,8 +2638,7 @@
     "OPTION1": "1.2 meters",
     "OPTION2": "2.5 meters",
     "OPTION3": "safe distance",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 319,
@@ -2879,8 +2646,7 @@
     "OPTION1": "all signals and warning sign posts",
     "OPTION2": "direction posts and marking on road",
     "OPTION3": "all of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 320,
@@ -2888,8 +2654,7 @@
     "OPTION1": "Explosives",
     "OPTION2": "fuel and lubricant of the vehicles",
     "OPTION3": "safely packed cartridge of small arms",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 321,
@@ -2897,8 +2662,7 @@
     "OPTION1": "highways",
     "OPTION2": "prohibited areas by notification of the authority",
     "OPTION3": "rural roads",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 322,
@@ -2906,8 +2670,7 @@
     "OPTION1": "helmet",
     "OPTION2": "Seat belt",
     "OPTION3": "none of above",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 323,
@@ -2915,8 +2678,7 @@
     "OPTION1": "rear wheel cover / sari guard",
     "OPTION2": "crash guard",
     "OPTION3": "both of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 324,
@@ -2924,8 +2686,7 @@
     "OPTION1": "right",
     "OPTION2": "left",
     "OPTION3": "middle",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 325,
@@ -2933,8 +2694,7 @@
     "OPTION1": "fuel, oil, brake fluid, coolant, condition of tyre",
     "OPTION2": "spare wheel, tools, tension of all drive belts",
     "OPTION3": "all of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 326,
@@ -2942,8 +2702,7 @@
     "OPTION1": "Minimum distance required for changing direction",
     "OPTION2": "during night driving",
     "OPTION3": "driving on ghat roads",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 327,
@@ -2951,8 +2710,7 @@
     "OPTION1": "park out side of the carriage way and use park light and hand brake",
     "OPTION2": "park the vehicle on foot path away from traffic",
     "OPTION3": "use tyre jacky to prevent roling",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 328,
@@ -2960,8 +2718,7 @@
     "OPTION1": "is prohibited by law",
     "OPTION2": "can be used after certification from authorities",
     "OPTION3": "cannot be used even in case of modern LPG inbuilt models",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 329,
@@ -2969,8 +2726,7 @@
     "OPTION1": "Reduces pollution",
     "OPTION2": "cost effective",
     "OPTION3": "all of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 330,
@@ -2978,8 +2734,7 @@
     "OPTION1": "use appropriate indicator signal before changing lanes",
     "OPTION2": "lane changing is prohibited by law",
     "OPTION3": "peep and see backwards through the front window before changing lanes",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 331,
@@ -2987,8 +2742,7 @@
     "OPTION1": "mechanically disabled or incompletely assembled motor vehicles",
     "OPTION2": "registered travellers and side cars",
     "OPTION3": "all of the above",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 332,
@@ -2996,8 +2750,7 @@
     "OPTION1": "driving with bad manners since high beams blind others",
     "OPTION2": "a safe driver since high beam lights up the road",
     "OPTION3": "not obeying law",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   
   {
@@ -3015,8 +2768,7 @@
     "OPTION1": "pass the vehicle from the left side",
     "OPTION2": "pass the vehicle from the convenient side",
     "OPTION3": "pass the vehicle from the right hand side after getting signal from the vehicle at the front",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 335,
@@ -3024,8 +2776,7 @@
     "OPTION1": "blow horn and pull out slowly",
     "OPTION2": "show signal to other traffic and then move carefully",
     "OPTION3": "proceed with caution after making sure that there is no vehicle in the vicinity that may cause an accident",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 336,
@@ -3033,8 +2784,7 @@
     "OPTION1": "Vehicle on the main road",
     "OPTION2": "the vehicle approaching",
     "OPTION3": "none of the cars",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 337,
@@ -3042,8 +2792,7 @@
     "OPTION1": "any lane",
     "OPTION2": "extreme left lane",
     "OPTION3": "extreme right lane",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 338,
@@ -3051,8 +2800,7 @@
     "OPTION1": "identify yourself and leave",
     "OPTION2": "help the person, and call an ambulance",
     "OPTION3": "help the injured for medical aid identify yourself and then report to police",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 339,
@@ -3060,8 +2808,7 @@
     "OPTION1": "when the road ahead is not visible",
     "OPTION2": "on straight road",
     "OPTION3": "in rural areas",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 340,
@@ -3069,8 +2816,7 @@
     "OPTION1": "main road",
     "OPTION2": "one way",
     "OPTION3": "at T Junction",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 341,
@@ -3078,8 +2824,7 @@
     "OPTION1": "tyre pressure must be reduced",
     "OPTION2": "avoid sudden braking and acceleration",
     "OPTION3": "vehicle should be driven at high speed",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 342,
@@ -3087,8 +2832,7 @@
     "OPTION1": "keep the motor cycle in the centre and behind the vehicle ahead",
     "OPTION2": "stay slightly on the right or left of the vehicle",
     "OPTION3": "none of the above",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 343,
@@ -3096,8 +2840,7 @@
     "OPTION1": "both hands",
     "OPTION2": "right hand only",
     "OPTION3": "left hand only",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 344,
@@ -3105,8 +2848,7 @@
     "OPTION1": "park the vehicle in such a way that it does not obstruct or make inconvenience to other road users",
     "OPTION2": "parallel to the kerb",
     "OPTION3": "right angle to the kerb",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 345,
@@ -3114,8 +2856,7 @@
     "OPTION1": "should drive cautiously to avoid any accident or loss to third party",
     "OPTION2": "should not drive",
     "OPTION3": "may drive if the driver has a valid personal life insurance policy",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 346,
@@ -3123,8 +2864,7 @@
     "OPTION1": "RTO",
     "OPTION2": "Motor Accident Claims Tribunal",
     "OPTION3": "banker of the driver or owner",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   
   {
@@ -3133,8 +2873,7 @@
     "OPTION1": "imprisonment upto six months, fine upto 2000 or both",
     "OPTION2": "strict warning from authorities",
     "OPTION3": "a fine of Rs.5000/-",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 348,
@@ -3142,8 +2881,7 @@
     "OPTION1": "turn ignition key off",
     "OPTION2": "stop the engine, remove key and engage hand brake",
     "OPTION3": "lock the car",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 349,
@@ -3151,8 +2889,7 @@
     "OPTION1": "throughout India",
     "OPTION2": "throughout the World",
     "OPTION3": "only in the State of issue",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 350,
@@ -3160,8 +2897,7 @@
     "OPTION1": "a maximum of 3 licence",
     "OPTION2": "only one licence",
     "OPTION3": "any number of licences however, each licence authorise only one class of vehicle for driving",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 351,
@@ -3169,8 +2905,7 @@
     "OPTION1": "yes, since the driver solely is responsible",
     "OPTION2": "No, since it is a serious offence",
     "OPTION3": "an offence only if the vehicle involves in an accident",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 352,
@@ -3178,8 +2913,7 @@
     "OPTION1": "yes, adding extra light brightens the road",
     "OPTION2": "No, you should not",
     "OPTION3": "Can be provided on the bottom part of the vehicle",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 353,
@@ -3187,8 +2921,7 @@
     "OPTION1": "is permitted in emergency",
     "OPTION2": "is an offence under law",
     "OPTION3": "is liable for a strict warning from authorities",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 354,
@@ -3196,8 +2929,7 @@
     "OPTION1": "unless it is absolutely necessary",
     "OPTION2": "on down hill",
     "OPTION3": "on main road",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 355,
@@ -3205,8 +2937,7 @@
     "OPTION1": "against regulation",
     "OPTION2": "permitted, depending upon its size",
     "OPTION3": "permitted if the object does not obstruct the view of the driver",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 356,
@@ -3214,8 +2945,7 @@
     "OPTION1": "proceed at regular speed",
     "OPTION2": "stop",
     "OPTION3": "proceed with not more than 25 Km/hr and carefully",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 357,
@@ -3223,8 +2953,7 @@
     "OPTION1": "apply rear brakes and after slowing apply front brakes",
     "OPTION2": "apply both front and rear brakes simultaneously",
     "OPTION3": "apply rear brake only",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 358,
@@ -3232,8 +2961,7 @@
     "OPTION1": "side by side",
     "OPTION2": "maintain the lane in a staggered position keeping a proper distance between motor cycle",
     "OPTION3": "travel behind each other in a single line",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 359,
@@ -3241,8 +2969,7 @@
     "OPTION1": "hit the area as fast as possible",
     "OPTION2": "slow down change to high torque gears before entering",
     "OPTION3": "go as slowly as possible",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 360,
@@ -3250,8 +2977,7 @@
     "OPTION1": "high speeds in high torque gears",
     "OPTION2": "high speed in low torque gears",
     "OPTION3": "a moderate uniform speed of 45 55 KMPH in top gear",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 361,
@@ -3259,8 +2985,7 @@
     "OPTION1": "oxygen, nitrogen and hydrogen",
     "OPTION2": "carbon dioxide, nitrogen and water",
     "OPTION3": "carbon monoxide, nitrogen oxide, and hydro carbon",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 362,
@@ -3268,8 +2993,7 @@
     "OPTION1": "cancellation of driving licence",
     "OPTION2": "Suspension of Registration Certificates",
     "OPTION3": "Cancellation of Insurance Certificates",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 363,
@@ -3277,8 +3001,7 @@
     "OPTION1": "ammonia",
     "OPTION2": "carbon monoxide",
     "OPTION3": "chlorine",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 364,
@@ -3286,8 +3009,7 @@
     "OPTION1": "the vehicle pick up speed quickly",
     "OPTION2": "it has little road grip",
     "OPTION3": "it has too much road grip",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   
   {
@@ -3296,8 +3018,7 @@
     "OPTION1": "for 30 days",
     "OPTION2": "only for the purpose of registration",
     "OPTION3": "for 6 months",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 366,
@@ -3305,8 +3026,7 @@
     "OPTION1": "attracts a strict warning for the authorities",
     "OPTION2": "is an offence and is punishable",
     "OPTION3": "attract other road users",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 367,
@@ -3314,8 +3034,7 @@
     "OPTION1": "using clutch frequently",
     "OPTION2": "keeping a foot on the clutch pedal",
     "OPTION3": "not using clutch at all",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 368,
@@ -3323,8 +3042,7 @@
     "OPTION1": "keep to the left of the road and slow down",
     "OPTION2": "stop where you are",
     "OPTION3": "ignore the vehicle",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 369,
@@ -3332,8 +3050,7 @@
     "OPTION1": "traffic is clear",
     "OPTION2": "the car stop completely",
     "OPTION3": "after signalling other cars",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 370,
@@ -3341,8 +3058,7 @@
     "OPTION1": "pull slowly into the parking space",
     "OPTION2": "park carefully into the parking space",
     "OPTION3": "park in front of the space",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 371,
@@ -3350,8 +3066,7 @@
     "OPTION1": "turn steering both the left and right",
     "OPTION2": "turn on the brakes first",
     "OPTION3": "turn the steering wheel in the direction of the car is skidding",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 372,
@@ -3359,8 +3074,7 @@
     "OPTION1": "allowed",
     "OPTION2": "not recommended since it is a costly alternative",
     "OPTION3": "is against law",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 373,
@@ -3368,8 +3082,7 @@
     "OPTION1": "continue at the same speed",
     "OPTION2": "stop, if possible to do so",
     "OPTION3": "slow down and proceed with caution",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 374,
@@ -3377,8 +3090,7 @@
     "OPTION1": "hurry to cross",
     "OPTION2": "stop at the stop line",
     "OPTION3": "proceed across the intersection with caution",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 375,
@@ -3395,8 +3107,7 @@
     "OPTION1": "continue into the circular traffic at slow speed",
     "OPTION2": "give way to the vehicles coming from the right direction",
     "OPTION3": "use the outside lane only",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 377,
@@ -3404,8 +3115,7 @@
     "OPTION1": "slow down and be cautious to negotiate the intersection",
     "OPTION2": "come to full stop and proceed with caution",
     "OPTION3": "not change speed if the way is clear",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 378,
@@ -3413,8 +3123,7 @@
     "OPTION1": "road rollers and cranes",
     "OPTION2": "mobile automobile work shop",
     "OPTION3": "ambulance and fire service vehicles",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 379,
@@ -3422,8 +3131,7 @@
     "OPTION1": "in one way",
     "OPTION2": "on main road",
     "OPTION3": "at silent zone",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 380,
@@ -3431,8 +3139,7 @@
     "OPTION1": "red light",
     "OPTION2": "white light",
     "OPTION3": "blue light",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 381,
@@ -3440,8 +3147,7 @@
     "OPTION1": "circular shape except stop and give way signs",
     "OPTION2": "triangular shape",
     "OPTION3": "rectangular shape",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 382,
@@ -3449,8 +3155,7 @@
     "OPTION1": "circular shape",
     "OPTION2": "triangular shape",
     "OPTION3": "rectangular shape",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 383,
@@ -3458,8 +3163,7 @@
     "OPTION1": "circular shape",
     "OPTION2": "triangular shape",
     "OPTION3": "rectangular shape",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 384,
@@ -3467,8 +3171,7 @@
     "OPTION1": "Creame yellow paint",
     "OPTION2": "red paint",
     "OPTION3": "green paint",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 385,
@@ -3476,8 +3179,7 @@
     "OPTION1": "gear-mirror-signal",
     "OPTION2": "mirror-gear-signal",
     "OPTION3": "signal-gear-mirror",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 386,
@@ -3485,8 +3187,7 @@
     "OPTION1": "mirror-start-gear-signal-move",
     "OPTION2": "start-gear-mirror-signal-move",
     "OPTION3": "start-mirror-signal-gear-move",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   
   {
@@ -3495,8 +3196,7 @@
     "OPTION1": "press clutch and then brake",
     "OPTION2": "press brake and then clutch",
     "OPTION3": "press clutch and brake simultaneously",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 388,
@@ -3504,8 +3204,7 @@
     "OPTION1": "use higher torque gear with brake",
     "OPTION2": "use top gear with brake",
     "OPTION3": "use brake and clutch simultaneously",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 389,
@@ -3513,8 +3212,7 @@
     "OPTION1": "stop, use hand brake and exhibit hazardous warning light",
     "OPTION2": "stop and exhibit red light",
     "OPTION3": "leave the vehicle",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 390,
@@ -3522,8 +3220,7 @@
     "OPTION1": "wait until it clears the road",
     "OPTION2": "pass it from front",
     "OPTION3": "pass it from behind",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 391,
@@ -3531,8 +3228,7 @@
     "OPTION1": "not permitted",
     "OPTION2": "permitted",
     "OPTION3": "special permission is required",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 392,
@@ -3540,8 +3236,7 @@
     "OPTION1": "1st gear",
     "OPTION2": "top gear",
     "OPTION3": "2nd gear",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 393,
@@ -3549,8 +3244,7 @@
     "OPTION1": "is allowed for safety reason",
     "OPTION2": "is not encouraged",
     "OPTION3": "is allowed in busy roads",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 394,
@@ -3558,8 +3252,7 @@
     "OPTION1": "can be used",
     "OPTION2": "cannot be used",
     "OPTION3": "can be used with signalling device only",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 395,
@@ -3567,8 +3260,7 @@
     "OPTION1": "only a government hospital doctor",
     "OPTION2": "any registered medical practitioner or doctor",
     "OPTION3": "by the driver",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 396,
@@ -3576,8 +3268,7 @@
     "OPTION1": "neutral gear",
     "OPTION2": "first gear",
     "OPTION3": "reverse gear",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 397,
@@ -3585,8 +3276,7 @@
     "OPTION1": "use only indicators",
     "OPTION2": "show only hand signal",
     "OPTION3": "use both light indicators and hand signal",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 398,
@@ -3594,8 +3284,7 @@
     "OPTION1": "only in the direction specified by the sign board",
     "OPTION2": "reverse direction in emergencies",
     "OPTION3": "both ways on sundays",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 399,
@@ -3603,8 +3292,7 @@
     "OPTION1": "drive fast before the opposite vehicle enters",
     "OPTION2": "switch on the head lights and take way",
     "OPTION3": "give preference to the vehicles going up",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 401,
@@ -3612,8 +3300,7 @@
     "OPTION1": "section 121",
     "OPTION2": "section 122",
     "OPTION3": "section 185",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 402,
@@ -3621,8 +3308,7 @@
     "OPTION1": "section 121",
     "OPTION2": "section 125",
     "OPTION3": "section 185",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 403,
@@ -3630,8 +3316,7 @@
     "OPTION1": "the limits of weight",
     "OPTION2": "the signal and signalling devices",
     "OPTION3": "the precautions at unguarded railway level crossing",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 404,
@@ -3639,8 +3324,7 @@
     "OPTION1": "60 km/hr",
     "OPTION2": "70 km/hr",
     "OPTION3": "80 km/hr",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 405,
@@ -3648,8 +3332,7 @@
     "OPTION1": "stage carriage",
     "OPTION2": "contract carriage except AR",
     "OPTION3": "E.I.B",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 406,
@@ -3657,8 +3340,7 @@
     "OPTION1": "after a curve",
     "OPTION2": "on a curve",
     "OPTION3": "when the visibility ahead is clear",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 407,
@@ -3666,8 +3348,7 @@
     "OPTION1": "in line",
     "OPTION2": "parallel",
     "OPTION3": "inclined",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 408,
@@ -3675,8 +3356,7 @@
     "OPTION1": "stop before the stop line and treat it as a stop signal",
     "OPTION2": "you have to proceed before him",
     "OPTION3": "sound horn and speed up your vehicle to cross before him",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
 
   {
@@ -3685,8 +3365,7 @@
     "OPTION1": "A fine of Rs. 100/- only",
     "OPTION2": "Disqualify from holding the driving licence under CMVR 21(25)",
     "OPTION3": "A fine of Rs. 500/- only",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 410,
@@ -3694,8 +3373,7 @@
     "OPTION1": 8,
     "OPTION2": 7,
     "OPTION3": 6,
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 411,
@@ -3703,8 +3381,7 @@
     "OPTION1": "continuously blow horn",
     "OPTION2": "over take immediately",
     "OPTION3": "keep safe distance",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 412,
@@ -3712,8 +3389,7 @@
     "OPTION1": "proud",
     "OPTION2": "humiliated",
     "OPTION3": "to correct your attitude in future",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 413,
@@ -3721,8 +3397,7 @@
     "OPTION1": "while taking a left",
     "OPTION2": "while travelling straight",
     "OPTION3": "while taking a right turn",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 414,
@@ -3730,8 +3405,7 @@
     "OPTION1": "Driver only",
     "OPTION2": "Front seat Passengers only",
     "OPTION3": "Both",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 415,
@@ -3739,8 +3413,7 @@
     "OPTION1": "prohibited under law",
     "OPTION2": "if the driver can control the vehicle safely",
     "OPTION3": "allowed if the driver pays the fine",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 416,
@@ -3748,8 +3421,7 @@
     "OPTION1": "Rs. 250/-",
     "OPTION2": "Rs. 50/-",
     "OPTION3": "Rs. 100/-",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 417,
@@ -3757,8 +3429,7 @@
     "OPTION1": "exceeds 80mg/100ml of blood",
     "OPTION2": "below 30mg/100ml blood",
     "OPTION3": "exceeds 100mg/100 ml of blood",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 418,
@@ -3766,8 +3437,7 @@
     "OPTION1": "is allowed with the permission of the RTO",
     "OPTION2": "is not allowed",
     "OPTION3": "allowed in case of emergency",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 419,
@@ -3775,8 +3445,7 @@
     "OPTION1": "displaying a board caution left hand drive",
     "OPTION2": "by using light or mechanical indicator system",
     "OPTION3": "by using both of the above",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 420,
@@ -3793,8 +3462,7 @@
     "OPTION1": "always permitted",
     "OPTION2": "permitted only to extend upto one meter from the rear end of the vehicle with suitable warning lights or flags",
     "OPTION3": "not permitted",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 422,
@@ -3802,8 +3470,7 @@
     "OPTION1": "brakes shall be adjusted by a mechanic",
     "OPTION2": "The vehicle to be withdrawn from the traffic at once",
     "OPTION3": "by operating the brake at several times at a slow driving speed",
-    "ANSWER": 3,
-    "IMAGE": ""
+    "ANSWER": 3 
   },
   {
     "Q_NUMBER": 424,
@@ -3811,8 +3478,7 @@
     "OPTION1": "penalty only",
     "OPTION2": "penalty for the driver and the owner and/or seizure of vehicle",
     "OPTION3": "warning",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 426,
@@ -3829,8 +3495,7 @@
     "OPTION1": "yes",
     "OPTION2": "No",
     "OPTION3": "Up to 2 persons are permitted",
-    "ANSWER": 2,
-    "IMAGE": ""
+    "ANSWER": 2 
   },
   {
     "Q_NUMBER": 428,
@@ -3838,8 +3503,7 @@
     "OPTION1": "use head light",
     "OPTION2": "make sure that wiper blades are not old",
     "OPTION3": "none of the above",
-    "ANSWER": 1,
-    "IMAGE": ""
+    "ANSWER": 1 
   },
   {
     "Q_NUMBER": 429,

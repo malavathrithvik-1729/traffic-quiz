@@ -22,150 +22,158 @@
       messagingSenderId: "1011063341314",
       appId: "1:1011063341314:web:2f4602a1dd1887d3b0821b"
     };
+
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
   </script>
 </head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <body>
 
-  <!-- ==================================================
-       SPLASH / INTRO SCREEN
-       ================================================== -->
-  <div id="introScreen"></div>
+  <!-- GLOBAL BACKGROUND -->
+  <div class="global-bg"></div>
 
-  <!-- ==================================================
-       OPENING PAGE
-       ================================================== -->
+  <!-- ENTRY / SPLASH SCREEN -->
+  <div id="entryScreen" class="screen">
+    <img src="logo.jpeg" class="entry-logo" alt="Logo">
+    <p class="entry-text">Powered by Telangana Transport Department</p>
+  </div>
+
+  <!-- START SCREEN -->
   <div id="startScreen" class="screen hidden">
+    <div class="plate">
+      <h1>Traffic Knowledge for Students</h1>
+      <p>Test your traffic education knowledge</p>
+      <p>Start a small quiz of 5 questions</p>
 
-    <h1>Traffic Knowledge for Students</h1>
-    <p>Test your traffic education knowledge</p>
-    <p>Start a small quiz of 5 questions</p>
+      <input type="text" id="usernameInput" placeholder="Enter your name">
 
-    <button class="primary-btn" onclick="startQuiz()">
-      Start Quiz
-    </button>
-
+      <button class="primary-btn" onclick="startQuiz()">
+        Start Quiz
+      </button>
+    </div>
   </div>
 
-  <!-- ==================================================
-       QUIZ PAGE
-       ================================================== -->
+  <!-- QUIZ SCREEN -->
   <div id="quizScreen" class="screen hidden">
+    <div class="plate">
 
-    <!-- Logo (top-right) -->
-    <img src="logo.png" class="corner-logo" alt="Logo">
+      <img src="logo.jpeg" class="corner-logo" alt="Logo">
 
-    <!-- QUESTION NAVIGATION BOX (CORRECTED) -->
-    <div class="question-nav">
-      <div class="q-nav-item" onclick="goToQuestion(0)">1</div>
-      <div class="q-nav-item" onclick="goToQuestion(1)">2</div>
-      <div class="q-nav-item" onclick="goToQuestion(2)">3</div>
-      <div class="q-nav-item" onclick="goToQuestion(3)">4</div>
-      <div class="q-nav-item" onclick="goToQuestion(4)">5</div>
-    </div>
+      <!-- Question Navigation -->
+      <div class="question-nav">
+        <div class="q-nav-item" onclick="goToQuestion(0)">1</div>
+        <div class="q-nav-item" onclick="goToQuestion(1)">2</div>
+        <div class="q-nav-item" onclick="goToQuestion(2)">3</div>
+        <div class="q-nav-item" onclick="goToQuestion(3)">4</div>
+        <div class="q-nav-item" onclick="goToQuestion(4)">5</div>
+      </div>
 
-    <!-- Progress bar -->
-    <div class="progress-container">
-      <div class="progress-bar" id="progressBar"></div>
-    </div>
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
 
-    <!-- Top bar -->
-    <div class="top-bar">
-      Question <span id="attempted">1</span> / 5
-    </div>
+      <!-- Question Counter -->
+      <div class="top-bar">
+        Question <span id="attempted">1</span> / 5
+      </div>
 
-    <!-- Question -->
-    <h2 id="question"></h2>
+      <!-- Question -->
+      <h2 id="question"></h2>
 
-    <!-- Optional image -->
-    <img id="qImage" class="q-image hidden" alt="Question Image">
+      <!-- Image -->
+      <div id="imageBox" class="image-box hidden">
+        <img id="qImage" alt="Traffic Sign">
+      </div>
 
-    <!-- Options -->
-    <div id="options">
-
-      <button class="option-btn" data-option="1" onclick="selectOption(1,this)">
-        <b>A.</b> <span id="o1"></span>
-      </button>
-
-      <button class="option-btn" data-option="2" onclick="selectOption(2,this)">
-        <b>B.</b> <span id="o2"></span>
-      </button>
-
-      <button class="option-btn" data-option="3" onclick="selectOption(3,this)">
-        <b>C.</b> <span id="o3"></span>
-      </button>
-
-      <button class="option-btn" data-option="0" onclick="selectOption(0,this)">
-        <b>D.</b> None of the above
-      </button>
-
-    </div>
-
-    <!-- Back / Next -->
-    <div style="display:flex; gap:15px; margin-top:20px;">
-      <button class="secondary-btn" id="backBtn" onclick="goBack()">
-        Back
-      </button>
-
-      <button class="primary-btn" id="nextBtn" onclick="nextQuestion()">
-        Next
-      </button>
-    </div>
-
-  </div>
-
-  <!-- ==================================================
-       RESULT PAGE
-       ================================================== -->
-  <div id="resultScreen" class="screen hidden">
-
-    <div class="result-top-bar">
-
-      <div class="result-controls">
-        <input type="text" id="username" placeholder="Enter your name">
-
-        <button class="primary-btn small" onclick="saveResult()">
-          Submit
+      <!-- Options -->
+      <div id="options">
+        <button class="option-btn" onclick="selectOption(1,this)">
+          <b>A.</b> <span id="o1"></span>
         </button>
 
-        <button class="secondary-btn small" onclick="location.reload()">
-          Restart
+        <button class="option-btn" onclick="selectOption(2,this)">
+          <b>B.</b> <span id="o2"></span>
+        </button>
+
+        <button class="option-btn" onclick="selectOption(3,this)">
+          <b>C.</b> <span id="o3"></span>
+        </button>
+
+        <button class="option-btn" onclick="selectOption(0,this)">
+          <b>D.</b> None of the above
         </button>
       </div>
 
-      <img src="logo.png" class="corner-logo" alt="Logo">
+      <!-- Navigation Buttons -->
+      <div style="display:flex; gap:15px; margin-top:20px;">
+        <button class="secondary-btn" id="backBtn" onclick="goBack()">Back</button>
+        <button class="primary-btn" id="nextBtn" onclick="nextQuestion()">Next</button>
+      </div>
+
     </div>
-
-    <h2>Thank you for attempting the quiz 🙏</h2>
-    <h3 id="finalScore"></h3>
-
-    <div id="reviewSection"></div>
-
-    <div class="result-tagline">
-      Traffic Education Program – Quiz
-    </div>
-
   </div>
 
-  <!-- ==================================================
-       MAIN SCRIPT
-       ================================================== -->
+  <!-- RESULT SCREEN -->
+  <div id="resultScreen" class="screen hidden">
+  <div class="plate wide">
+
+    <h2>Quiz Result</h2>
+
+    <!-- TOP STATS -->
+    <div class="result-stats">
+      <div class="stat correct">
+        ✔ Correct<br><span id="correctCount"></span>
+      </div>
+      <div class="stat wrong">
+        ✖ Wrong<br><span id="wrongCount"></span>
+      </div>
+      <div class="stat score">
+        🎯 Score<br><span id="finalScore"></span>
+      </div>
+    </div>
+
+    <!-- PIE CHART -->
+   <div class="chart-box">
+  <canvas id="resultChart"></canvas>
+</div>
+
+<div class="answer-boxes">
+  <div class="answer correct-box">
+    ✔ Correct Answers<br>
+    <span id="correctCountBox"></span>
+  </div>
+
+  <div class="answer wrong-box">
+    ✖ Wrong Answers<br>
+    <span id="wrongCountBox"></span>
+  </div>
+</div>
+
+    <!-- REVIEW -->
+    <div id="reviewSection"></div>
+
+    <button class="secondary-btn restart-btn" onclick="restartQuiz()">
+  Restart Quiz
+</button>
+
+
+  </div>
+</div>
+
+  <!-- MAIN SCRIPT -->
   <script src="script.js"></script>
 
-  <!-- ==================================================
-       SPLASH AUTO TRANSITION
-       ================================================== -->
+  <!-- SPLASH AUTO TRANSITION -->
   <script>
-    setTimeout(() => {
-      document.getElementById("introScreen").classList.add("fade-out");
-    }, 2000);
-
-    setTimeout(() => {
-      document.getElementById("introScreen").style.display = "none";
-      document.getElementById("startScreen").classList.remove("hidden");
-    }, 3200);
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        document.getElementById("entryScreen").style.display = "none";
+        document.getElementById("startScreen").classList.remove("hidden");
+      }, 2500);
+    });
   </script>
 
 </body>

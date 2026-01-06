@@ -1,15 +1,17 @@
 /************************************************
- * GLOBAL VARIABLES
+ * GLOBAL STATE
  ************************************************/
 let allQuestions = [];
 let quizQuestions = [];
 let currentIndex = 0;
-let score = 0;
 let userAnswers = [];
-let visitedQuestions = [];
+let visited = [];
+let score = 0;
+let submitted = false;
+let username = "";
 
 /************************************************
- * LOAD QUESTIONS FROM JSON
+ * LOAD QUESTIONS
  ************************************************/
 fetch("questions.json")
   .then(res => res.json())
@@ -18,152 +20,156 @@ fetch("questions.json")
     console.log("Questions loaded:", allQuestions.length);
   })
   .catch(err => {
-    console.error(err);
-    alert("Failed to load questions");
+    console.error("Failed to load questions", err);
+    alert("Unable to load questions");
   });
 
 /************************************************
  * START QUIZ
  ************************************************/
 function startQuiz() {
-  if (allQuestions.length < 5) {
-    alert("Not enough questions available");
-    return;
-  }
+  const nameInput = document.getElementById("usernameInput");
+username = nameInput.value.trim();
+
+if (!username) {
+  alert("Please enter your name");
+  return;
+}
+
 
   quizQuestions = [...allQuestions]
     .sort(() => Math.random() - 0.5)
     .slice(0, 5);
 
   currentIndex = 0;
-  score = 0;
   userAnswers = [];
-  visitedQuestions = [];
+  visited = [];
+  score = 0;
+  submitted = false;
 
   document.getElementById("startScreen").classList.add("hidden");
   document.getElementById("quizScreen").classList.remove("hidden");
-
-  document.getElementById("progressBar").style.width = "20%";
 
   loadQuestion();
 }
 
 /************************************************
- * LOAD QUESTION (FIXED)
+ * LOAD QUESTION
  ************************************************/
 function loadQuestion() {
   const q = quizQuestions[currentIndex];
+  visited[currentIndex] = true;
 
-  // Mark visited
-  visitedQuestions[currentIndex] = true;
-
-  // Question count
   document.getElementById("attempted").innerText = currentIndex + 1;
-
-  // Progress bar
-  const progressPercent =
-    ((currentIndex + 1) / quizQuestions.length) * 100;
-  document.getElementById("progressBar").style.width =
-    progressPercent + "%";
-
-  // Question text
   document.getElementById("question").innerText = q.QUESTION;
 
-  // Options text
   document.getElementById("o1").innerText = q.OPTION1;
   document.getElementById("o2").innerText = q.OPTION2;
   document.getElementById("o3").innerText = q.OPTION3;
 
-  // Reset + restore selected option
+  // Progress bar
+  document.getElementById("progressBar").style.width =
+    ((currentIndex + 1) / quizQuestions.length) * 100 + "%";
+
+  // Restore option selection
   document.querySelectorAll(".option-btn").forEach(btn => {
     btn.classList.remove("selected");
-
-    const optValue = Number(btn.getAttribute("data-option"));
-    if (userAnswers[currentIndex] === optValue) {
+    const val = Number(btn.dataset.option);
+    if (userAnswers[currentIndex] === val) {
       btn.classList.add("selected");
     }
   });
 
-  // Image handling
+  // IMAGE HANDLING (SAFE)
+  const imgBox = document.getElementById("imageBox");
   const img = document.getElementById("qImage");
+
+  imgBox.classList.add("hidden");
+  img.src = "";
+
   if (q.IMAGE && q.IMAGE.trim() !== "") {
+    img.onload = () => imgBox.classList.remove("hidden");
+    img.onerror = () => imgBox.classList.add("hidden");
     img.src = "images/" + q.IMAGE;
-    img.classList.remove("hidden");
-  } else {
-    img.classList.add("hidden");
   }
 
-  // Back button visibility
-  const backBtn = document.getElementById("backBtn");
-  if (backBtn) {
-    backBtn.style.display =
-      currentIndex === 0 ? "none" : "inline-block";
-  }
-
-  // Next / Submit button text
-  const nextBtn = document.getElementById("nextBtn");
-  if (nextBtn) {
-    nextBtn.innerText =
-      currentIndex === quizQuestions.length - 1
-        ? "Submit"
-        : "Next";
-  }
-
-  updateQuestionNav();
+  updateNav();
 }
 
 /************************************************
  * SELECT OPTION
  ************************************************/
 function selectOption(value, btn) {
+  if (submitted) return;
+
   userAnswers[currentIndex] = value;
 
   document.querySelectorAll(".option-btn").forEach(b =>
     b.classList.remove("selected")
   );
-
   btn.classList.add("selected");
-  updateQuestionNav();
+
+  updateNav();
 }
 
 /************************************************
  * NEXT / SUBMIT
  ************************************************/
 function nextQuestion() {
+  if (submitted) return;
+
   if (userAnswers[currentIndex] === undefined) {
-    alert("Please answer this question first");
+    alert("Please answer this question");
     return;
   }
 
   if (currentIndex < quizQuestions.length - 1) {
     currentIndex++;
     loadQuestion();
-  } else {
-    // Final validation (SAFE – no blank page)
-    for (let i = 0; i < quizQuestions.length; i++) {
-      if (userAnswers[i] === undefined) {
-        alert("Please answer all 5 questions before submitting");
-        return;
-      }
-    }
-
-    calculateScore();
-    showResult();
+    return;
   }
+
+  // Final submit
+  submitted = true;
+  calculateScore();
+  showResult();
 }
 
 /************************************************
- * BACK BUTTON
+ * BACK
  ************************************************/
 function goBack() {
-  if (currentIndex > 0) {
+  if (currentIndex > 0 && !submitted) {
     currentIndex--;
     loadQuestion();
   }
 }
 
 /************************************************
- * CALCULATE SCORE
+ * NAVIGATION CLICK
+ ************************************************/
+function goToQuestion(i) {
+  if (!submitted) {
+    currentIndex = i;
+    loadQuestion();
+  }
+}
+
+/************************************************
+ * UPDATE NAV COLORS
+ ************************************************/
+function updateNav() {
+  document.querySelectorAll(".q-nav-item").forEach((item, i) => {
+    item.classList.remove("current", "answered", "visited");
+
+    if (i === currentIndex) item.classList.add("current");
+    else if (userAnswers[i] !== undefined) item.classList.add("answered");
+    else if (visited[i]) item.classList.add("visited");
+  });
+}
+
+/************************************************
+ * SCORE
  ************************************************/
 function calculateScore() {
   score = 0;
@@ -173,75 +179,101 @@ function calculateScore() {
 }
 
 /************************************************
- * SHOW RESULT
+ * RESULT SCREEN
  ************************************************/
 function showResult() {
   document.getElementById("quizScreen").classList.add("hidden");
   document.getElementById("resultScreen").classList.remove("hidden");
 
-  document.getElementById("finalScore").innerText =
-    `Your Score: ${score} / ${quizQuestions.length}`;
+  const correct = score;
+  const wrong = quizQuestions.length - score;
+  const percent = Math.round((score / quizQuestions.length) * 100);
 
+  document.getElementById("correctCount").innerText = correct;
+  document.getElementById("wrongCount").innerText = wrong;
+  document.getElementById("finalScore").innerText =
+    `${score}/${quizQuestions.length} (${percent}%)`;
+document.getElementById("correctCountBox").innerText = correct;
+document.getElementById("wrongCountBox").innerText = wrong;
+
+  renderReview();
+  drawChart(correct, wrong);
+  saveResult(percent);
+}
+
+
+/************************************************
+ * REVIEW SECTION
+ ************************************************/
+function renderReview() {
   const review = document.getElementById("reviewSection");
   review.innerHTML = "";
 
   quizQuestions.forEach((q, i) => {
-    const block = document.createElement("div");
-    block.style.margin = "15px 0";
-    block.style.padding = "12px";
-    block.style.border = "1px solid #ccc";
+    const div = document.createElement("div");
+    div.className = "review-block";
 
-    block.innerHTML = `
-      <p><b>Q${i + 1}.</b> ${q.QUESTION}</p>
-      <p class="${q.ANSWER === 1 ? "correct" : userAnswers[i] === 1 ? "wrong" : ""}">A. ${q.OPTION1}</p>
-      <p class="${q.ANSWER === 2 ? "correct" : userAnswers[i] === 2 ? "wrong" : ""}">B. ${q.OPTION2}</p>
-      <p class="${q.ANSWER === 3 ? "correct" : userAnswers[i] === 3 ? "wrong" : ""}">C. ${q.OPTION3}</p>
-      <p class="${q.ANSWER === 0 ? "correct" : userAnswers[i] === 0 ? "wrong" : ""}">D. None of the above</p>
-    `;
+    let opts = "";
+    for (let o = 1; o <= 3; o++) {
+      let cls = "";
+      if (q.ANSWER === o) cls = "correct";
+      else if (userAnswers[i] === o) cls = "wrong";
 
-    review.appendChild(block);
-  });
-}
-
-/************************************************
- * QUESTION NAV COLORS
- ************************************************/
-function updateQuestionNav() {
-  document.querySelectorAll(".q-nav-item").forEach((item, i) => {
-    item.classList.remove("current", "answered", "visited");
-
-    if (i === currentIndex) {
-      item.classList.add("current");     // 🔵
-    } else if (userAnswers[i] !== undefined) {
-      item.classList.add("answered");    // 🟢
-    } else if (visitedQuestions[i]) {
-      item.classList.add("visited");     // 🟡
+      opts += `<div class="${cls}">
+        ${String.fromCharCode(64 + o)}. ${q["OPTION" + o]}
+      </div>`;
     }
+
+    div.innerHTML = `
+      <p><b>Q${i + 1}.</b> ${q.QUESTION}</p>
+      ${opts}
+    `;
+    review.appendChild(div);
   });
 }
 
 /************************************************
- * NAV CLICK
+ * SAVE RESULT (FIRESTORE)
  ************************************************/
-function goToQuestion(index) {
-  currentIndex = index;
-  loadQuestion();
-}
-
-/************************************************
- * SAVE RESULT
- ************************************************/
-function saveResult() {
-  const name = document.getElementById("username").value.trim();
-  if (!name) {
-    alert("Please enter your name");
-    return;
-  }
+function saveResult(percent) {
+  if (typeof db === "undefined") return;
 
   db.collection("results").add({
-    name,
-    score,
+    name: username,
+    score: score,
     total: quizQuestions.length,
-    time: new Date().toISOString()
-  }).then(() => alert("Result saved successfully ✅"));
+    percentage: percent,
+    createdAt: firebase.firestore.FieldValue.serverTimestamp()
+  })
+  .then(() => console.log("Result saved with name"))
+  .catch(err => console.error("Firestore error:", err));
+}
+
+/************************************************
+ * RESTART
+ ************************************************/
+function restartQuiz() {
+  location.reload();
+}
+function drawChart(correct, wrong) {
+  const ctx = document.getElementById("resultChart");
+
+  new Chart(ctx, {
+    type: "pie",
+    data: {
+      labels: ["Correct", "Wrong"],
+      datasets: [{
+        data: [correct, wrong],
+        backgroundColor: ["#2ecc71", "#e74c3c"]
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: "bottom"
+        }
+      }
+    }
+  });
 }
