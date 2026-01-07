@@ -1,4 +1,4 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -21,9 +21,22 @@
       messagingSenderId: "1011063341314",
       appId: "1:1011063341314:web:2f4602a1dd1887d3b0821b"
     };
-
     firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
+    const db = firebase.firestore(); // 👉 used by JS to save to admin
+  </script>
+
+  <!-- 🌐 GOOGLE TRANSLATOR -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'en,te',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        },
+        'google_translate_element'
+      );
+    }
   </script>
 </head>
 
@@ -40,6 +53,12 @@
   <img src="logo.jpeg" class="corner-logo">
 
   <div class="quiz-card">
+
+    <!-- TRANSLATOR -->
+    <div style="text-align:right;margin-bottom:10px;">
+      <div id="google_translate_element"></div>
+    </div>
+
     <h1>Traffic Knowledge for Students</h1>
     <p>Test your traffic education knowledge</p>
     <p>Start a small quiz of 5 questions</p>
@@ -66,21 +85,27 @@
 <div id="quizScreen" class="screen hidden">
   <img src="logo.jpeg" class="corner-logo">
 
-  <div class="question-nav">
-    <div class="q-nav-item" onclick="goToQuestion(0)">1</div>
-    <div class="q-nav-item" onclick="goToQuestion(1)">2</div>
-    <div class="q-nav-item" onclick="goToQuestion(2)">3</div>
-    <div class="q-nav-item" onclick="goToQuestion(3)">4</div>
-    <div class="q-nav-item" onclick="goToQuestion(4)">5</div>
+  <!-- QUESTION NAV -->
+  <div class="question-nav" id="questionNav" translate="no"></div>
+
+  <!-- NAV LEGEND -->
+  <div class="nav-legend" translate="no">
+    <span style="color:#1e3a8a;">●</span> Current &nbsp;
+    <span style="color:#16a34a;">●</span> Answered &nbsp;
+    <span style="color:#facc15;">●</span> Visited
   </div>
 
   <div class="quiz-card">
+
     <div class="progress-container">
       <div class="progress-bar" id="progressBar"></div>
     </div>
 
-    <div class="top-bar">
-      Question <span id="attempted">1</span> / 5
+    <!-- QUESTION COUNTER (TRANSLATE SAFE) -->
+    <div class="top-bar" translate="no">
+      <span id="questionLabel">Question</span>
+      <span id="attempted">1</span> /
+      <span id="totalQ">5</span>
     </div>
 
     <h2 id="question"></h2>
@@ -97,7 +122,7 @@
         C. <span id="o3"></span>
       </button>
       <button class="option-btn" data-option="0" onclick="selectOption(0,this)">
-        D. None of the above
+        D. <span>None of the above</span>
       </button>
     </div>
 
@@ -110,8 +135,9 @@
 
 <!-- ================= RESULT ================= -->
 <div id="resultScreen" class="screen hidden">
-  <div class="quiz-card">
+  <div class="quiz-card" style="max-height:90vh;display:flex;flex-direction:column;">
 
+    <!-- SCORE RING -->
     <div class="score-ring-wrapper">
       <svg class="score-ring" width="180" height="180">
         <circle class="ring-bg" cx="90" cy="90" r="80"></circle>
@@ -119,19 +145,54 @@
       </svg>
       <div class="score-ring-text">
         <span id="ringScore">0</span>
-        <small>/ 100</small>
+        <small>%</small>
       </div>
     </div>
 
     <h3 id="finalScore"></h3>
-    <div id="reviewSection"></div>
 
-    <button class="primary-btn" onclick="location.reload()">Restart</button>
+    <!-- 🔽 SHOW / HIDE REVIEW TOGGLE -->
+    <button
+      class="secondary-btn"
+      id="toggleReviewBtn"
+      style="margin-top:10px"
+      onclick="toggleReview()">
+      Show Answer Review
+    </button>
+
+    <!-- REVIEW SECTION -->
+    <div
+      id="reviewWrapper"
+      style="
+        display:none;
+        flex:1;
+        overflow-y:auto;
+        margin-top:15px;
+        border-top:1px solid #ddd;
+        padding-top:10px;
+      ">
+
+      <h4 style="text-align:left;">Answer Review</h4>
+
+      <div id="reviewSection"></div>
+    </div>
+
+    <!-- RESTART -->
+    <button
+      class="primary-btn"
+      style="margin-top:15px"
+      onclick="location.reload()">
+      Restart Quiz
+    </button>
+
   </div>
 </div>
 
-<!-- ✅ ONLY CHANGE HERE -->
+<!-- MAIN SCRIPT -->
 <script src="script.js" defer></script>
+
+<!-- GOOGLE TRANSLATE -->
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <!-- SPLASH AUTO HIDE -->
 <script>

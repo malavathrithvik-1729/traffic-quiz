@@ -14,67 +14,65 @@ let username = "";
  ************************************************/
 fetch("questions.json")
   .then(res => res.json())
-  .then(data => {
-    allQuestions = data;
-    console.log("Loaded:", allQuestions.length);
-  })
-  .catch(err => {
-    console.error(err);
-    alert("Failed to load questions");
-  });
+  .then(data => allQuestions = data)
+  .catch(() => alert("Failed to load questions"));
 
 /************************************************
  * START QUIZ
  ************************************************/
 function startQuiz() {
-
   const nameInput = document.getElementById("usernameInput");
-  if (nameInput) {
-    username = nameInput.value.trim();
-    if (!username) {
-      alert("Please enter your name");
-      return;
-    }
-  }
-
-  if (allQuestions.length < 5) {
-    alert("Not enough questions");
+  username = nameInput.value.trim();
+  if (!username) {
+    alert("Please enter your name");
     return;
   }
 
-  quizQuestions = [...allQuestions]
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 5);
-
+  quizQuestions = [...allQuestions].sort(() => Math.random() - 0.5).slice(0, 5);
   currentIndex = 0;
   score = 0;
   userAnswers = [];
   visitedQuestions = [];
 
+  document.getElementById("totalQ").innerText = quizQuestions.length;
+
   document.getElementById("startScreen").classList.add("hidden");
   document.getElementById("quizScreen").classList.remove("hidden");
 
-  loadQuestion();
   createQuestionNav();
-
+  loadQuestion();
 }
+
+/************************************************
+ * QUESTION NAV
+ ************************************************/
 function createQuestionNav() {
   const nav = document.getElementById("questionNav");
-  if (!nav) return;
-
   nav.innerHTML = "";
 
   quizQuestions.forEach((_, i) => {
     const item = document.createElement("div");
     item.className = "q-nav-item";
-    item.innerText = i + 1;
-
+    item.innerHTML = `<span translate="no">${i + 1}</span>`;
     item.onclick = () => goToQuestion(i);
-
     nav.appendChild(item);
   });
 
   updateQuestionNav();
+}
+
+function updateQuestionNav() {
+  document.querySelectorAll(".q-nav-item").forEach((item, i) => {
+    item.classList.remove("current", "answered", "visited");
+
+    if (i === currentIndex) {
+      item.classList.add("current");
+    } else if (userAnswers[i] !== undefined) {
+      item.classList.add("answered");
+    } else if (visitedQuestions[i]) {
+      item.classList.add("visited");
+    }
+  });
 }
 
 /************************************************
@@ -95,37 +93,35 @@ function loadQuestion() {
 
   document.querySelectorAll(".option-btn").forEach(btn => {
     btn.classList.remove("selected");
-    const opt = Number(btn.dataset.option);
-    if (userAnswers[currentIndex] === opt) btn.classList.add("selected");
+    if (userAnswers[currentIndex] === Number(btn.dataset.option)) {
+      btn.classList.add("selected");
+    }
   });
 
   const img = document.getElementById("qImage");
-img.src = ""; // 🔥 force reset to stop image reuse
+  img.src = "";
+  if (q.IMAGE) {
+    img.src = "images/" + q.IMAGE;
+    img.classList.remove("hidden");
+  } else {
+    img.classList.add("hidden");
+  }
 
-if (q.IMAGE && q.IMAGE.trim() !== "") {
-  img.src = "images/" + q.IMAGE;
-  img.classList.remove("hidden");
-} else {
-  img.classList.add("hidden");
-}
+  updateQuestionNav();
 }
 
 /************************************************
- * SELECT OPTION
+ * OPTION SELECT
  ************************************************/
-function selectOption(value, btn) {
-  userAnswers[currentIndex] = value;
-
-  document.querySelectorAll(".option-btn").forEach(b =>
-    b.classList.remove("selected")
-  );
-
+function selectOption(val, btn) {
+  userAnswers[currentIndex] = val;
+  document.querySelectorAll(".option-btn").forEach(b => b.classList.remove("selected"));
   btn.classList.add("selected");
   updateQuestionNav();
 }
 
 /************************************************
- * NEXT / SUBMIT
+ * NEXT / FINISH
  ************************************************/
 function nextQuestion() {
   if (userAnswers[currentIndex] === undefined) {
@@ -137,19 +133,20 @@ function nextQuestion() {
     currentIndex++;
     loadQuestion();
   } else {
-    calculateScore();
-    showResult();
+    finishQuiz();
   }
 }
 
 /************************************************
- * BACK
+ * FINISH QUIZ
  ************************************************/
-function goBack() {
-  if (currentIndex > 0) {
-    currentIndex--;
-    loadQuestion();
-  }
+function finishQuiz() {
+  calculateScore();
+
+  document.getElementById("quizScreen").classList.add("hidden");
+  document.getElementById("resultScreen").classList.remove("hidden");
+
+  setTimeout(buildReview, 100);
 }
 
 /************************************************
@@ -161,92 +158,86 @@ function calculateScore() {
     if (userAnswers[i] === q.ANSWER) score++;
   });
 }
-function getOptionText(q, optionNumber) {
-  if (optionNumber === 1) return "A. " + q.OPTION1;
-  if (optionNumber === 2) return "B. " + q.OPTION2;
-  if (optionNumber === 3) return "C. " + q.OPTION3;
-  if (optionNumber === 0) return "D. None of the above";
-  return "Not Answered";
+
+/************************************************
+ * TOGGLE REVIEW (FIXED)
+ ************************************************/
+function toggleReview() {
+  const wrap = document.getElementById("reviewWrapper");
+  const btn = document.getElementById("toggleReviewBtn");
+
+  if (wrap.style.display === "none") {
+    wrap.style.display = "block";
+    btn.innerText = "Hide Answer Review";
+  } else {
+    wrap.style.display = "none";
+    btn.innerText = "Show Answer Review";
+  }
 }
 
 /************************************************
- * RESULT PAGE
+ * BUILD REVIEW + SAVE ADMIN DATA
  ************************************************/
-function showResult() {
-  document.getElementById("quizScreen").classList.add("hidden");
-  document.getElementById("resultScreen").classList.remove("hidden");
+function buildReview() {
+  const review = document.getElementById("reviewSection");
+  if (!review) return;
+
+  review.innerHTML = "";
 
   document.getElementById("finalScore").innerText =
-    `${username ? username + ", " : ""}Your Score: ${score} / ${quizQuestions.length}`;
-
-  const review = document.getElementById("reviewSection");
-  review.innerHTML = "";
+    `${username}, Your Score: ${score} / ${quizQuestions.length}`;
 
   animateScoreRing();
   launchConfettiIfHighScore();
-  saveResultToFirebase();
+  saveResultToFirebase(); // 🔥 admin save
 
   quizQuestions.forEach((q, i) => {
-    const userAns = userAnswers[i];
-    const correctAns = q.ANSWER;
-
     const block = document.createElement("div");
-    block.style.margin = "18px 0";
-    block.style.padding = "15px";
-    block.style.borderRadius = "10px";
+    block.style.margin = "12px 0";
+    block.style.padding = "12px";
+    block.style.borderRadius = "8px";
     block.style.border = "1px solid #ccc";
     block.style.background =
-      userAns === correctAns ? "#e9f9ef" : "#fdecea";
+      userAnswers[i] === q.ANSWER ? "#e9f9ef" : "#fdecea";
 
     block.innerHTML = `
-  <p><b>Q${i + 1}.</b> ${q.QUESTION}</p>
-
-  ${
-    userAns === correctAns
-      ? `<p class="correct">✅ Your Answer: <b>${getOptionText(q, userAns)}</b></p>`
-      : `
-        <p class="wrong">❌ Your Answer: <b>${getOptionText(q, userAns)}</b></p>
-        <p class="correct">✅ Correct Answer: <b>${getOptionText(q, correctAns)}</b></p>
-      `
-  }
-`;
-
-
+      <p><b>Q${i + 1}.</b> ${q.QUESTION}</p>
+      <p>❓ Your Answer: ${getOptionText(q, userAnswers[i])}</p>
+      <p>✅ Correct Answer: ${getOptionText(q, q.ANSWER)}</p>
+    `;
     review.appendChild(block);
   });
 }
 
-
 /************************************************
- * QUESTION NAV COLORS
+ * HELPERS
  ************************************************/
-function updateQuestionNav() {
-  document.querySelectorAll(".q-nav-item").forEach((item, i) => {
-    item.classList.remove("current", "answered", "visited");
-
-    if (i === currentIndex) item.classList.add("current");
-    else if (userAnswers[i] !== undefined) item.classList.add("answered");
-    else if (visitedQuestions[i]) item.classList.add("visited");
-  });
+function getOptionText(q, opt) {
+  if (opt === 1) return "A. " + q.OPTION1;
+  if (opt === 2) return "B. " + q.OPTION2;
+  if (opt === 3) return "C. " + q.OPTION3;
+  return "D. None of the above";
 }
 
-/************************************************
- * NAV CLICK
- ************************************************/
-function goToQuestion(index) {
-  currentIndex = index;
+function goBack() {
+  if (currentIndex > 0) {
+    currentIndex--;
+    loadQuestion();
+  }
+}
+
+function goToQuestion(i) {
+  currentIndex = i;
   loadQuestion();
 }
 
 /************************************************
- * SCORE RING ANIMATION
+ * SCORE RING
  ************************************************/
 function animateScoreRing() {
   const percent = Math.round((score / quizQuestions.length) * 100);
   const circle = document.querySelector(".ring-progress");
   const text = document.getElementById("ringScore");
-
-  if (!circle || !text) return;
 
   const radius = 80;
   const circumference = 2 * Math.PI * radius;
@@ -255,39 +246,40 @@ function animateScoreRing() {
   circle.style.strokeDashoffset =
     circumference - (percent / 100) * circumference;
 
-  let current = 0;
+  let c = 0;
   const timer = setInterval(() => {
-    if (current >= percent) clearInterval(timer);
-    else text.innerText = ++current;
+    if (c >= percent) clearInterval(timer);
+    else text.innerText = ++c + "%";
   }, 15);
 }
 
 /************************************************
- * CONFETTI (HIGH SCORE ONLY)
+ * CONFETTI
  ************************************************/
 function launchConfettiIfHighScore() {
   if ((score / quizQuestions.length) * 100 < 60) return;
-
-  confetti({
-    particleCount: 150,
-    spread: 80,
-    origin: { y: 0.6 }
-  });
+  confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
 }
 
 /************************************************
- * FIREBASE SAVE (KEEP)
+ * FIREBASE SAVE (ADMIN READY)
  ************************************************/
 function saveResultToFirebase() {
-  if (typeof db === "undefined") return;
+  if (!window.db) return;
+
+  const detailedAnswers = quizQuestions.map((q, i) => ({
+    question: q.QUESTION,
+    correctAnswer: getOptionText(q, q.ANSWER),
+    userAnswer: getOptionText(q, userAnswers[i]),
+    isCorrect: userAnswers[i] === q.ANSWER
+  }));
 
   db.collection("results").add({
-    name: username || "Anonymous",
-    score: score,
+    name: username,
+    score,
     total: quizQuestions.length,
     percentage: Math.round((score / quizQuestions.length) * 100),
-    createdAt: firebase.firestore.FieldValue.serverTimestamp()
-  })
-  .then(() => console.log("Result saved to Firebase"))
-  .catch(err => console.error("Firebase save error:", err));
+    answers: detailedAnswers,
+    createdAt: new Date().toISOString()
+  });
 }

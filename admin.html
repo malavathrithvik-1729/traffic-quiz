@@ -1,56 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Admin Panel – Traffic Quiz Results</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Admin CSS -->
-  <link rel="stylesheet" href="admin.css">
-
-  <!-- Firebase SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
-</head>
-
-<body>
-
-<div class="admin-container">
-
-  <!-- HEADER -->
-  <div class="admin-header">
-    <img src="logo.jpeg" class="logo" alt="Logo">
-    <h1>Traffic Quiz – Admin Panel</h1>
-    <p>Traffic Knowledge for Students</p>
-  </div>
-
-  <!-- TABLE -->
-  <div class="table-wrapper">
-    <table>
-      <thead>
-        <tr>
-          <th>S.No</th>
-          <th>Name</th>
-          <th>Score</th>
-          <th>Percentage</th>
-          <th>Date & Time</th>
-        </tr>
-      </thead>
-      <tbody id="resultsTable">
-        <tr>
-          <td colspan="5" style="text-align:center;">Loading results…</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="admin-footer">
-    © Telangana Traffic Police – Educational Purpose Only
-  </div>
-
-</div>
-
 <script>
   /************************************************
    * FIREBASE INIT (ADMIN READ-ONLY)
@@ -68,14 +15,13 @@
   const db = firebase.firestore();
 
   /************************************************
-   * LOAD RESULTS
+   * LOAD RESULTS (ROBUST)
    ************************************************/
   const table = document.getElementById("resultsTable");
   let count = 1;
 
   db.collection("results")
-    .orderBy("createdAt", "desc")
-    .get()
+    .get() // ❗ removed orderBy to avoid type conflict
     .then(snapshot => {
       table.innerHTML = "";
 
@@ -90,11 +36,19 @@
         return;
       }
 
-      snapshot.forEach(doc => {
+      // sort manually by date (latest first)
+      const docs = snapshot.docs.sort((a, b) => {
+        const da = parseDate(a.data().createdAt);
+        const db = parseDate(b.data().createdAt);
+        return db - da;
+      });
+
+      docs.forEach(doc => {
         const d = doc.data();
 
-        const dateText = d.createdAt
-          ? d.createdAt.toDate().toLocaleString()
+        const dateObj = parseDate(d.createdAt);
+        const dateText = dateObj
+          ? dateObj.toLocaleString()
           : "—";
 
         const percentage = d.percentage !== undefined
@@ -124,7 +78,23 @@
         </tr>
       `;
     });
-</script>
 
-</body>
-</html>
+  /************************************************
+   * DATE PARSER (SUPPORTS ALL FORMATS)
+   ************************************************/
+  function parseDate(value) {
+    if (!value) return null;
+
+    // Firestore Timestamp
+    if (typeof value.toDate === "function") {
+      return value.toDate();
+    }
+
+    // ISO string
+    if (typeof value === "string") {
+      return new Date(value);
+    }
+
+    return null;
+  }
+</script>
