@@ -23,12 +23,16 @@ fetch("questions.json")
 function startQuiz() {
   const nameInput = document.getElementById("usernameInput");
   username = nameInput.value.trim();
+
   if (!username) {
     alert("Please enter your name");
     return;
   }
 
-  quizQuestions = [...allQuestions].sort(() => Math.random() - 0.5).slice(0, 5);
+  quizQuestions = [...allQuestions]
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 5);
+
   currentIndex = 0;
   score = 0;
   userAnswers = [];
@@ -65,18 +69,14 @@ function updateQuestionNav() {
   document.querySelectorAll(".q-nav-item").forEach((item, i) => {
     item.classList.remove("current", "answered", "visited");
 
-    if (i === currentIndex) {
-      item.classList.add("current");
-    } else if (userAnswers[i] !== undefined) {
-      item.classList.add("answered");
-    } else if (visitedQuestions[i]) {
-      item.classList.add("visited");
-    }
+    if (i === currentIndex) item.classList.add("current");
+    else if (userAnswers[i] !== undefined) item.classList.add("answered");
+    else if (visitedQuestions[i]) item.classList.add("visited");
   });
 }
 
 /************************************************
- * LOAD QUESTION
+ * LOAD QUESTION (IMAGE BUG FIXED)
  ************************************************/
 function loadQuestion() {
   const q = quizQuestions[currentIndex];
@@ -98,13 +98,14 @@ function loadQuestion() {
     }
   });
 
+  // 🔥 IMAGE RESET FIX
   const img = document.getElementById("qImage");
   img.src = "";
-  if (q.IMAGE) {
+  img.classList.add("hidden");
+
+  if (q.IMAGE && q.IMAGE.trim() !== "") {
     img.src = "images/" + q.IMAGE;
     img.classList.remove("hidden");
-  } else {
-    img.classList.add("hidden");
   }
 
   updateQuestionNav();
@@ -115,7 +116,8 @@ function loadQuestion() {
  ************************************************/
 function selectOption(val, btn) {
   userAnswers[currentIndex] = val;
-  document.querySelectorAll(".option-btn").forEach(b => b.classList.remove("selected"));
+  document.querySelectorAll(".option-btn")
+    .forEach(b => b.classList.remove("selected"));
   btn.classList.add("selected");
   updateQuestionNav();
 }
@@ -138,7 +140,7 @@ function nextQuestion() {
 }
 
 /************************************************
- * FINISH QUIZ
+ * FINISH QUIZ (SINGLE VERSION)
  ************************************************/
 function finishQuiz() {
   calculateScore();
@@ -146,7 +148,10 @@ function finishQuiz() {
   document.getElementById("quizScreen").classList.add("hidden");
   document.getElementById("resultScreen").classList.remove("hidden");
 
-  setTimeout(buildReview, 100);
+  document.getElementById("reviewWrapper").style.display = "block";
+  document.getElementById("toggleReviewBtn").innerText = "Hide Answer Review";
+
+  buildReview();
 }
 
 /************************************************
@@ -160,7 +165,7 @@ function calculateScore() {
 }
 
 /************************************************
- * TOGGLE REVIEW (FIXED)
+ * TOGGLE REVIEW
  ************************************************/
 function toggleReview() {
   const wrap = document.getElementById("reviewWrapper");
@@ -180,8 +185,6 @@ function toggleReview() {
  ************************************************/
 function buildReview() {
   const review = document.getElementById("reviewSection");
-  if (!review) return;
-
   review.innerHTML = "";
 
   document.getElementById("finalScore").innerText =
@@ -189,7 +192,7 @@ function buildReview() {
 
   animateScoreRing();
   launchConfettiIfHighScore();
-  saveResultToFirebase(); // 🔥 admin save
+  saveResultToFirebase();
 
   quizQuestions.forEach((q, i) => {
     const block = document.createElement("div");
@@ -249,7 +252,7 @@ function animateScoreRing() {
   let c = 0;
   const timer = setInterval(() => {
     if (c >= percent) clearInterval(timer);
-    else text.innerText = ++c + "%";
+    else text.innerText = ++c;
   }, 15);
 }
 
@@ -262,7 +265,7 @@ function launchConfettiIfHighScore() {
 }
 
 /************************************************
- * FIREBASE SAVE (ADMIN READY)
+ * FIREBASE SAVE
  ************************************************/
 function saveResultToFirebase() {
   if (!window.db) return;
@@ -280,6 +283,7 @@ function saveResultToFirebase() {
     total: quizQuestions.length,
     percentage: Math.round((score / quizQuestions.length) * 100),
     answers: detailedAnswers,
-    createdAt: new Date().toISOString()
-  });
+    createdAt: firebase.firestore.FieldValue.serverTimestamp()
+  })
+  .catch(err => console.error("Firebase save error:", err));
 }

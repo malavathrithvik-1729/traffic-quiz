@@ -5,7 +5,6 @@
   <title>Admin Panel – Traffic Quiz Results</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Admin CSS -->
   <link rel="stylesheet" href="admin.css">
 
   <!-- Firebase SDKs -->
@@ -17,14 +16,12 @@
 
 <div class="admin-container">
 
-  <!-- HEADER -->
   <div class="admin-header">
     <img src="logo.jpeg" class="logo" alt="Logo">
     <h1>Traffic Quiz – Admin Panel</h1>
     <p>Traffic Knowledge for Students</p>
   </div>
 
-  <!-- TABLE -->
   <div class="table-wrapper">
     <table>
       <thead>
@@ -44,7 +41,6 @@
     </table>
   </div>
 
-  <!-- FOOTER -->
   <div class="admin-footer">
     © Telangana Traffic Police – Educational Purpose Only
   </div>
@@ -53,7 +49,7 @@
 
 <script>
   /************************************************
-   * FIREBASE INIT (ADMIN READ-ONLY)
+   * FIREBASE INIT (SAFE)
    ************************************************/
   const firebaseConfig = {
     apiKey: "AIzaSyAJT61cprsH6Zxsv4xvubfMnKlk3XSq3gE",
@@ -64,7 +60,10 @@
     appId: "1:1011063341314:web:2f4602a1dd1887d3b0821b"
   };
 
-  firebase.initializeApp(firebaseConfig);
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+
   const db = firebase.firestore();
 
   /************************************************
@@ -85,33 +84,29 @@
             <td colspan="5" style="text-align:center;">
               No results found
             </td>
-          </tr>
-        `;
+          </tr>`;
         return;
       }
 
       snapshot.forEach(doc => {
         const d = doc.data();
 
-        const dateText = d.createdAt
-          ? d.createdAt.toDate().toLocaleString()
-          : "—";
+        // ⛑ Skip broken old documents
+        if (!d.createdAt) return;
 
+        const dateText = d.createdAt.toDate().toLocaleString();
         const percentage = d.percentage !== undefined
           ? d.percentage + "%"
           : "—";
 
-        const row = `
+        table.innerHTML += `
           <tr>
             <td>${count++}</td>
             <td>${d.name || "—"}</td>
             <td class="score">${d.score} / ${d.total}</td>
             <td>${percentage}</td>
             <td>${dateText}</td>
-          </tr>
-        `;
-
-        table.innerHTML += row;
+          </tr>`;
       });
     })
     .catch(error => {
@@ -121,11 +116,9 @@
           <td colspan="5" style="text-align:center;color:red;">
             Failed to load results
           </td>
-        </tr>
-      `;
+        </tr>`;
     });
 </script>
 
 </body>
 </html>
-

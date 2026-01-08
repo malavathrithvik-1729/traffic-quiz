@@ -7,11 +7,11 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Firebase -->
+  <!-- Firebase SDKs (MUST LOAD FIRST) -->
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
 
-  <!-- Firebase Config -->
+  <!-- Firebase Init -->
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyAJT61cprsH6Zxsv4xvubfMnKlk3XSq3gE",
@@ -21,11 +21,14 @@
       messagingSenderId: "1011063341314",
       appId: "1:1011063341314:web:2f4602a1dd1887d3b0821b"
     };
+
     firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore(); // 👉 used by JS to save to admin
+
+    // 🔥 MAKE DB GLOBAL (VERY IMPORTANT)
+    window.db = firebase.firestore();
   </script>
 
-  <!-- 🌐 GOOGLE TRANSLATOR -->
+  <!-- 🌐 GOOGLE TRANSLATE -->
   <script>
     function googleTranslateElementInit() {
       new google.translate.TranslateElement(
@@ -54,7 +57,6 @@
 
   <div class="quiz-card">
 
-    <!-- TRANSLATOR -->
     <div style="text-align:right;margin-bottom:10px;">
       <div id="google_translate_element"></div>
     </div>
@@ -67,14 +69,8 @@
       type="text"
       id="usernameInput"
       placeholder="Enter your name"
-      style="
-        width:100%;
-        padding:12px;
-        margin:15px 0;
-        font-size:1rem;
-        border-radius:8px;
-        border:1px solid #ccc;
-      "
+      style="width:100%;padding:12px;margin:15px 0;font-size:1rem;
+             border-radius:8px;border:1px solid #ccc;"
     />
 
     <button class="primary-btn" onclick="startQuiz()">Start Quiz</button>
@@ -85,10 +81,8 @@
 <div id="quizScreen" class="screen hidden">
   <img src="logo.jpeg" class="corner-logo">
 
-  <!-- QUESTION NAV -->
   <div class="question-nav" id="questionNav" translate="no"></div>
 
-  <!-- NAV LEGEND -->
   <div class="nav-legend" translate="no">
     <span style="color:#1e3a8a;">●</span> Current &nbsp;
     <span style="color:#16a34a;">●</span> Answered &nbsp;
@@ -101,7 +95,6 @@
       <div class="progress-bar" id="progressBar"></div>
     </div>
 
-    <!-- QUESTION COUNTER (TRANSLATE SAFE) -->
     <div class="top-bar" translate="no">
       <span id="questionLabel">Question</span>
       <span id="attempted">1</span> /
@@ -137,21 +130,18 @@
 <div id="resultScreen" class="screen hidden">
   <div class="quiz-card" style="max-height:90vh;display:flex;flex-direction:column;">
 
-    <!-- SCORE RING -->
     <div class="score-ring-wrapper">
       <svg class="score-ring" width="180" height="180">
         <circle class="ring-bg" cx="90" cy="90" r="80"></circle>
         <circle class="ring-progress" cx="90" cy="90" r="80"></circle>
       </svg>
       <div class="score-ring-text">
-        <span id="ringScore">0</span>
-        <small>%</small>
+        <span id="ringScore">0</span><small>%</small>
       </div>
     </div>
 
     <h3 id="finalScore"></h3>
 
-    <!-- 🔽 SHOW / HIDE REVIEW TOGGLE -->
     <button
       class="secondary-btn"
       id="toggleReviewBtn"
@@ -160,36 +150,22 @@
       Show Answer Review
     </button>
 
-    <!-- REVIEW SECTION -->
-    <div
-      id="reviewWrapper"
-      style="
-        display:none;
-        flex:1;
-        overflow-y:auto;
-        margin-top:15px;
-        border-top:1px solid #ddd;
-        padding-top:10px;
-      ">
-
+    <div id="reviewWrapper"
+         style="display:none;flex:1;overflow-y:auto;margin-top:15px;
+                border-top:1px solid #ddd;padding-top:10px;">
       <h4 style="text-align:left;">Answer Review</h4>
-
       <div id="reviewSection"></div>
     </div>
 
-    <!-- RESTART -->
-    <button
-      class="primary-btn"
-      style="margin-top:15px"
-      onclick="location.reload()">
+    <button class="primary-btn" style="margin-top:15px"
+            onclick="location.reload()">
       Restart Quiz
     </button>
-
   </div>
 </div>
 
-<!-- MAIN SCRIPT -->
-<script src="script.js" defer></script>
+<!-- MAIN SCRIPT (LOAD LAST) -->
+<script src="script.js"></script>
 
 <!-- GOOGLE TRANSLATE -->
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
